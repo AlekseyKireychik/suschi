@@ -13,31 +13,58 @@
     <meta property="og:image" content="img/preview.jpg" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/media.css" />
     
   </head>
 
   <body>
-    <header>
-      <div class="container__header">
-        <div class="container">
-          <div class="row">
+    <header class="container__header">
+      <div class="container">
+        <div class="row header__top">
+            <div class="header__logo">
+              <a href="">
+                <img src="./images/logo.svg" alt="logo">
+              </a>
+            </div>
+            <nav class="header__nav">
+              <ul class="header__list">
+                <li class="header__item">
+                  <a href="/" class="header__link">О нас</a>
+                </li>
+                <li class="header__item">
+                  <a href="/" class="header__link">Цены</a>
+                </li>
+                <li class="header__item">
+                  <a href="/" class="header__link">Акции</a>
+                </li>
+                <li class="header__item">
+                  <a href="/" class="header__link">Специалисты</a>
+                </li>
+                <li class="header__item">
+                  <a href="/" class="header__link">Галерея</a>
+                </li>
+                <li class="header__item">
+                  <a href="/" class="header__link">Контакты</a>
+                </li>
+              </ul>
+              <a class="header__radio" href="">Темная тема</a>
+            </nav>
+            <div class="header__function">
+              <a class="header__phone" href="tel:+375441111111"></a>  
+              <div class="burger__menu">
+                <a href="#" class="burger__menu__button">
+                  <span class="burger__menu__lines"></span>
+                </a>
+              </div>         
+            </div>
             
-          </div>
         </div>
       </div>
     </header>
     <main class="home"></main>
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="footer__logo">
-            <img src="./images/logo.png" alt="" />
-          </div>
-          <span class="footer__description"> Copyright &#169; 2019 | All Rights Reserved</span>
-        </div>
-      </div>
+    <footer>      
     </footer>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/jquery-3.2.1.min.js"></script>
