@@ -4,68 +4,261 @@
     <meta charset="utf-8" />
 
     <title>sushi</title>
-    <meta name="description" content="" />
+    <meta name="catalog__description" content="" />
 
     <meta name="viewport" content="width=device-width" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 
-    <link rel="icon" href="./images/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon-16x16.png"
+    />
     <meta property="og:image" content="img/preview.jpg" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/media.css" />
-    
   </head>
 
   <body>
     <header class="container__header">
       <div class="container">
         <div class="row header__top">
-            <div class="header__logo">
-              <a href="">
-                <img src="./images/logo.svg" alt="logo">
+          <div class="header__logo">
+            <a href="">
+              <img src="./images/logo.svg" alt="logo" />
+            </a>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="/" class="header__link">Каталог</a>
+              </li>
+              <li class="header__item">
+                <a href="/" class="header__link">Акции</a>
+              </li>
+              <li class="header__item">
+                <a href="/news.html" class="header__link">Новости</a>
+              </li>
+              <li class="header__item">
+                <a href="/" class="header__link">О нас</a>
+              </li>
+              <li class="header__item">
+                <a href="/" class="header__link">Карьера</a>
+              </li>
+              <li class="header__item">
+                <a href="/" class="header__link">Отзывы</a>
+              </li>
+              <li class="header__item">
+                <a href="/" class="header__link">Личный кабинет</a>
+              </li>
+            </ul>
+            <a class="header__radio" href="">Темная тема</a>
+          </nav>
+          <div class="header__function">
+            <a class="header__phone" href="tel:+375441111111"></a>
+            <div class="burger__menu">
+              <a href="#" class="burger__menu__button">
+                <span class="burger__menu__lines"></span>
               </a>
             </div>
-            <nav class="header__nav">
-              <ul class="header__list">
-                <li class="header__item">
-                  <a href="/" class="header__link">О нас</a>
-                </li>
-                <li class="header__item">
-                  <a href="/" class="header__link">Цены</a>
-                </li>
-                <li class="header__item">
-                  <a href="/" class="header__link">Акции</a>
-                </li>
-                <li class="header__item">
-                  <a href="/" class="header__link">Специалисты</a>
-                </li>
-                <li class="header__item">
-                  <a href="/" class="header__link">Галерея</a>
-                </li>
-                <li class="header__item">
-                  <a href="/" class="header__link">Контакты</a>
-                </li>
-              </ul>
-              <a class="header__radio" href="">Темная тема</a>
-            </nav>
-            <div class="header__function">
-              <a class="header__phone" href="tel:+375441111111"></a>  
-              <div class="burger__menu">
-                <a href="#" class="burger__menu__button">
-                  <span class="burger__menu__lines"></span>
-                </a>
-              </div>         
-            </div>
-            
+          </div>
         </div>
       </div>
     </header>
-    <main class="home"></main>
-    <footer>      
-    </footer>
+    <main class="home">
+      <div class="container-fluid banner">
+        <div class="row">
+          <img class="banner__image" src="./images/image-banner.jpg" alt="" />
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <form class="form__promocode" action="">
+            <input
+              class="input__promocode"
+              type="text"
+              placeholder="Введите промокод"
+            />
+            <input class="btn__promocode" type="submit" value="Применить" />
+          </form>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <a href="./catalog.html"
+                ><img
+                  class="catalog__img"
+                  src="./images/catalog-img.jpg"
+                  alt=""
+                /><span class="catalog__description">Обеденное меню</span></a
+              >
+            </li>
+            <li class="catalog__item">
+              <a href="./catalog.html"
+                ><img
+                  class="catalog__img"
+                  src="./images/catalog-img-2.jpg"
+                  alt=""
+                /><span class="catalog__description">Hot Box WOK</span></a
+              >
+            </li>
+            <li class="catalog__item">
+              <a href="./catalog.html"
+                ><img
+                  class="catalog__img"
+                  src="./images/catalog-img-3.jpg"
+                  alt=""
+                /><span class="catalog__description">Cool Box WOK</span></a
+              >
+            </li>
+            <li class="catalog__item">
+              <a href="./catalog.html"
+                ><img
+                  class="catalog__img"
+                  src="./images/catalog-img.jpg"
+                  alt=""
+                /><span class="catalog__description">Супы WOK</span></a
+              >
+            </li>
+            <li class="catalog__item">
+              <a href="./catalog.html"
+                ><img
+                  class="catalog__img"
+                  src="./images/catalog-img-2.jpg"
+                  alt=""
+                /><span class="catalog__description">Маки</span></a
+              >
+            </li>
+            <li class="catalog__item">
+              <a href="./catalog.html"
+                ><img
+                  class="catalog__img"
+                  src="./images/catalog-img.jpg"
+                  alt=""
+                /><span class="catalog__description">Ура Маки</span></a
+              >
+            </li>
+            <li class="catalog__item">
+              <a href="./catalog.html"
+                ><img
+                  class="catalog__img"
+                  src="./images/catalog-img.jpg"
+                  alt=""
+                /><span class="catalog__description">Футо Маки</span></a
+              >
+            </li>
+            <li class="catalog__item">
+              <a href="./catalog.html"
+                ><img
+                  class="catalog__img"
+                  src="./images/catalog-img.jpg"
+                  alt=""
+                /><span class="catalog__description">Гунканы</span></a
+              >
+            </li>
+            <li class="catalog__item">
+              <a href="./catalog.html"
+                ><img
+                  class="catalog__img"
+                  src="./images/catalog-img.jpg"
+                  alt=""
+                /><span class="catalog__description">Нигири</span></a
+              >
+            </li>
+            <li class="catalog__item">
+              <a href="./catalog.html"
+                ><img
+                  class="catalog__img"
+                  src="./images/catalog-img.jpg"
+                  alt=""
+                /><span class="catalog__description">СушиРрито</span></a
+              >
+            </li>
+            <li class="catalog__item">
+              <a href="./catalog.html"
+                ><img
+                  class="catalog__img"
+                  src="./images/catalog-img.jpg"
+                  alt=""
+                /><span class="catalog__description">Сеты</span></a
+              >
+            </li>
+            <li class="catalog__item">
+              <a href="./catalog.html"
+                ><img
+                  class="catalog__img"
+                  src="./images/catalog-img.jpg"
+                  alt=""
+                /><span class="catalog__description">Супы</span></a
+              >
+            </li>
+            <li class="catalog__item">
+              <a href="./catalog.html"
+                ><img
+                  class="catalog__img"
+                  src="./images/catalog-img.jpg"
+                  alt=""
+                /><span class="catalog__description">Салаты</span></a
+              >
+            </li>
+            <li class="catalog__item">
+              <a href="./catalog.html"
+                ><img
+                  class="catalog__img"
+                  src="./images/catalog-img.jpg"
+                  alt=""
+                /><span class="catalog__description">Десерты</span></a
+              >
+            </li>
+            <li class="catalog__item">
+              <a href="./catalog.html"
+                ><img
+                  class="catalog__img"
+                  src="./images/catalog-img.jpg"
+                  alt=""
+                /><span class="catalog__description">Напитки</span></a
+              >
+            </li>
+            <li class="catalog__item">
+              <a href="./catalog.html"
+                ><img
+                  class="catalog__img"
+                  src="./images/catalog-img.jpg"
+                  alt=""
+                /><span class="catalog__description">Гарниры</span></a
+              >
+            </li>
+            <li class="catalog__item">
+              <a href="./catalog.html"
+                ><img
+                  class="catalog__img"
+                  src="./images/catalog-img.jpg"
+                  alt=""
+                /><span class="catalog__description">Сертификаты</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
