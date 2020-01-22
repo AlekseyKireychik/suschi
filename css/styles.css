@@ -621,3 +621,67 @@
   margin-bottom: 0;
 }
 /*** News Page end ***/
+
+/*** Pagenews Page start ***/
+
+.pagenews {
+  padding: 30px 20px 25px;
+}
+.pagenews__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.pagenews__top .title {
+  margin-bottom: 5px;
+}
+.pagenews__date {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: #000000;
+  margin-bottom: 0;
+}
+
+.pagenevs__image {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.pagenews p {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+p.pagenevs__description {
+  margin-bottom: 20px;
+}
+.pagenews li {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.pagenews span {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.pagenews a {
+  display: block;
+  width: 100%;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 17px;
+  color: #000000;
+}
+/*** Pagenews Page end ***/
