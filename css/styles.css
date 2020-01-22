@@ -22,15 +22,16 @@
   color: #ffffff;
   text-decoration: none;
 }
-/*** Header Start ***/
 
+
+/*** Header Start ***/
+header {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
 .header__top {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-.header__logo {
 }
 .header__nav {
   position: absolute;
@@ -41,6 +42,7 @@
   justify-content: flex-start;
   flex-direction: column;
   min-height: calc(100vh - 80px);
+  height: 100%;
   z-index: 9999;
   transition: transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
   transform: translate3d(-99%, 0, 0);
@@ -685,3 +687,190 @@ p.pagenevs__description {
   color: #000000;
 }
 /*** Pagenews Page end ***/
+
+/*** About Us Page start ***/
+.about {
+  padding: 30px 20px 25px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.about .title {
+  margin-bottom: 30px;
+}
+.about p:last-child { 
+  margin-bottom: 0px;
+}
+/*** About Us Page end ***/
+
+/*** Vacansii Page start ***/
+.vacansii {
+  padding: 30px 20px 25px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.vacansii .title {
+  margin-bottom: 30px;
+}
+.vacansii__description {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.vacansii p a,
+.vacansii span,
+.vacansii span a {
+  color: #000000;
+  font-weight: 600;
+}
+.vacansii__list {
+  border-radius: 10px;
+  padding: 0px;
+  overflow: hidden;
+}
+.vacansii__item {
+  padding: 20px 15px;
+  background: rgba(229, 229, 229, 0.5);
+}
+.vacansii__item:nth-child(even) {
+  background: rgba(229, 229, 229, 0.8);
+}
+.vacansii__item:first-child {
+  padding-top: 30px;
+}
+.vacancii__name {
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 600;
+}
+.vacansii__item .btn {
+  width: 120px;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 0px;
+}
+/*** Vacansii Page end ***/
+
+/*** PageVacansii start ***/
+.pagevacansii {
+  padding: 30px 20px 25px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.pagevacansii .title {
+  margin-bottom: 30px;
+}
+.pagevacansii p {
+  margin-bottom: 20px;
+}
+.pagevacansii p a,
+.pagevacansii span,
+.pagevacansii span a {
+  color: #000000;
+  font-weight: 700;
+}
+.pagevacansii .btn__box {
+  padding: 10px 10px 0;
+  width: 100%;
+}
+.pagevacansii .btn {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 0px;
+  padding: 10px 5px;
+  outline-color: none;
+}
+/*** PageVacansii end ***/
+
+/*** Reviews Page start ***/
+.reviews {
+  padding: 30px 20px 25px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+.reviews .title {
+  margin-bottom: 30px;
+}
+.reviews__name {
+  margin-bottom: 0px;
+  font-size: 18px;
+  line-height: 22px;
+}
+.reviews__email {
+  margin-bottom: 15px;
+}
+.reviews__description {
+  margin-bottom: 0px;
+}
+.reviews__list {
+  padding: 0px;
+  margin-bottom: 0px;
+}
+.reviews__item {
+  position: relative;
+  padding: 20px 15px;
+  background: rgba(229, 229, 229, 0.5);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.reviews__item::before {
+  position: absolute;
+  content: url(../images/verefication.svg);
+  right: 15px;
+  top: 15px;
+}
+.reviews__item:last-child {
+  margin-bottom: 0px;
+}
+
+/*** Reviews Page end ***/
+
+/*** My Review Page start ***/
+.myreview {
+  padding: 30px 20px 25px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+.myreview .title {
+  margin-bottom: 30px;
+}
+.myreview__form {
+  width: 100%;
+}
+.myreview__group {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.myreview__control {
+  background: #FFFFFF;
+  padding: 12px 8px;
+  border: 1px solid #A1A4B1;
+  border-radius: 4px;
+  width: 100%;
+}
+.myreview__label {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #232735;
+}
+/*** My Review Page end ***/
