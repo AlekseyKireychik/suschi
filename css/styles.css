@@ -1060,7 +1060,7 @@ p.pagenevs__description {
 
 /*** Account step-2 Page end ***/
 
-/*** Account step-3 Page start ***/
+/*** Account step-3-4 Page start ***/
 .account.step-3 {
   padding: 30px 20px 25px;
   font-family: "Montserrat";
@@ -1145,6 +1145,7 @@ p.pagenevs__description {
   border: none;
   padding-left: 0;
   margin-right: 10px;
+  cursor: pointer
 }
 .account.step-3 .account__btn__change:hover,
 .account.step-3 .account__btn__change:active {
@@ -1159,6 +1160,7 @@ p.pagenevs__description {
   outline-color: transparent;
   border: none;
   padding-left: 0;
+  cursor: pointer
 }
 .account.step-3 .account__btn__remove:hover,
 .account.step-3 .account__btn__remove:active {
@@ -1173,6 +1175,7 @@ p.pagenevs__description {
   outline-color: transparent;
   border: none;
   padding-left: 0;
+  cursor: pointer
 }
 .account.step-3 .account__btn__add:hover,
 .account.step-3 .account__btn__add:active {
@@ -1205,6 +1208,7 @@ p.pagenevs__description {
   color: rgba(0, 0, 0, 0.6);
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.6);
+  cursor: pointer;
 }
 .account.step-3 .history__orders .title {
   margin-top: 30px;
@@ -1297,4 +1301,58 @@ p.pagenevs__description {
   width: 100%;
 }
 
-/*** Account step-3 Page end ***/
+/*** Account step-3-4 Page end ***/
+
+/*** My Review Page start ***/
+.account {
+  padding: 30px 20px 25px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+.account .title {
+  margin-bottom: 20px;
+}
+.account__form {
+  width: 100%;
+}
+.account__group {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: relative;
+}
+.account__control {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  background: #ffffff;
+  padding: 12px 8px;
+  border: 1px solid #a1a4b1;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  outline-color: transparent;
+}
+.account__control:last-child {
+  margin-bottom: 20px;
+}
+.account__label {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  align-items: center;
+  color: #232735;
+}
+
+/*** My Review Page end ***/

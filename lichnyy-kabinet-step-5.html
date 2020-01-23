@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>sushi</title>
+    <meta name="catalog__description" content="" />
+
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon-16x16.png"
+    />
+    <meta property="og:image" content="img/preview.jpg" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+
+  <body>
+    <header class="container__header">
+      <div class="container">
+        <div class="row header__top">
+          <div class="header__logo">
+            <a href="">
+              <img src="./images/logo.svg" alt="logo" />
+            </a>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="/" class="header__link">Каталог</a>
+              </li>
+              <li class="header__item">
+                <a href="/" class="header__link">Акции</a>
+              </li>
+              <li class="header__item">
+                <a href="./news.html" class="header__link">Новости</a>
+              </li>
+              <li class="header__item">
+                <a href="./aboutus.html" class="header__link">О нас</a>
+              </li>
+              <li class="header__item">
+                <a href="./vacansii.html" class="header__link">Карьера</a>
+              </li>
+              <li class="header__item">
+                <a href="./reviews.html" class="header__link">Отзывы</a>
+              </li>
+              <li class="header__item">
+                <a href="/" class="header__link">Личный кабинет</a>
+              </li>
+            </ul>
+            <a class="header__radio" href="">Темная тема</a>
+          </nav>
+          <div class="header__function">
+            <a class="header__phone" href="tel:+375441111111"></a>
+            <div class="burger__menu">
+              <a href="#" class="burger__menu__button">
+                <span class="burger__menu__lines"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="account">
+      <div class="container">
+        <div class="row">
+          <h2 class="title">Изменить пароль</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <form id="account-form" class="account__form">
+            <div class="formWrap">
+              <div class="account__group">
+                <input
+                  type="password"
+                  placeholder=" "
+                  class="account__control"
+                  name="oldpassword"
+                  id="oldpassword"
+                  required
+                />
+                <label for="oldpassword" class="account__label">Старый пароль</label>
+              </div>
+              <div class="account__group">
+                <input
+                  type="password"
+                  placeholder=" "
+                  class="account__control"
+                  name="newpassword"
+                  id="newpassword"
+                  required
+                />
+                <label for="newpassword" class="account__label">Новый пароль</label>
+              </div>
+              <div class="account__group">
+                <input
+                  type="password"
+                  placeholder=" "
+                  class="account__control"
+                  name="verification"
+                  id="verification"
+                  required
+                />
+                <label for="verification" class="account__label">Подтверждение нового пароля</label>
+              </div>              
+              <div class="footer__bottom">
+                <div class="form__box">
+                  <button type="submit" id="account-btn" class="btn submit">
+                    Сохранить
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
