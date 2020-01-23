@@ -64,7 +64,9 @@
                 <a href="./reviews.html" class="header__link">Отзывы</a>
               </li>
               <li class="header__item">
-                <a href="/" class="header__link">Личный кабинет</a>
+                <a href="./lichnyy-kabinet-step-1.html" class="header__link"
+                  >Личный кабинет</a
+                >
               </li>
             </ul>
             <a class="header__radio" href="">Темная тема</a>
@@ -80,85 +82,52 @@
         </div>
       </div>
     </header>
-    <main class="myreview">
+    <main class="account step-2">
       <div class="container">
         <div class="row">
-          <h2 class="title">Мой отзыв</h2>
+          <h2 class="title">
+            Мы отправили Вам СМС с кодом на
+            <span class="maska">+375 (__) ___-__-__</span>
+          </h2>
         </div>
       </div>
       <div class="container">
         <div class="row">
-          <form id="myreview-form" class="myreview__form">
-            <div class="formWrap">
-              <div class="myreview__group">
-                <input
-                  type="text"
-                  placeholder=" "
-                  class="myreview__control"
-                  name="name"
-                  id="name"
-                  required
-                />
-                <label for="name" class="myreview__label">Ваше имя*</label>
-              </div>
-              <div class="myreview__group">
-                <input
-                  type="email"
-                  placeholder=" "
-                  class="myreview__control"
-                  name="email"
-                  id="email"
-                  required
-                />
-                <label for="email" class="myreview__label">Email*</label>
-              </div>
-              <div class="myreview__group phone">
-                <input
-                  type="tel"
-                  placeholder="+375 (__) ___-__-__"
-                  class="myreview__control"
-                  name="tel"
-                  id="tel"
-                  required
-                />
-                <label for="tel" class="myreview__label"
-                  >Номер телефона, с которого был сделан заказ*</label
-                >
-              </div>
-              <div class="myreview__group file">
-                <label for="uploaded-file" class="myreview__label">Прикрепите файл</label>
-                <input
-                  id="uploaded-file"
-                  placeholder=""
-                  accept="image/jpeg,image/png,image/gif"
-                  class="myreview__control__file"
-                  type="file"
-                  name="file"
-                  multiple
-                />
-                <span>(не более 10Мб, jpeg, png, gif)</span>
-              </div>
-              <div id="file-name"></div>
-              <div class="myreview__group comment">
-                <textarea
-                  data-autoresize
-                  name="comment"
-                  id="comment"
-                  coll="5"
-                  rows="5"
-                  class="myreview__control"
-                  placeholder="Оставьте Ваше сообщение"
-                ></textarea>
-                <label for="comment" class="myreview__label"></label>
-              </div>
-              <div class="recaptha"><img src="./images/newCaptchaAnchor 1.jpg" alt="CaptchaAnchor заглушка"></div>
-              <div class="footer__bottom">
-                <div class="form__box">
-                  <button type="submit" id="my-reviews-btn" class="btn submit">
-                    ОТПРАВИТЬ
-                  </button>
-                </div>
-              </div>
+          <form id=" " class="account__form">
+            <div class="account__group">
+              <input
+                type="text"
+                placeholder=" "
+                class="account__control"
+                name="text"
+                id="text-01"
+              />
+              <input
+                type="text"
+                placeholder=" "
+                class="account__control"
+                name="text"
+                id="text-02"
+              />
+              <input
+                type="text"
+                placeholder=" "
+                class="account__control"
+                name="text"
+                id="text-03"
+              />
+              <input
+                type="text"
+                placeholder=" "
+                class="account__control"
+                name="text"
+                id="text-04"
+              />
+            </div>
+            <div class="form__box">
+              <button type="submit" id="account-btn" class="btn submit">
+                Отправить еще раз
+              </button>
             </div>
           </form>
         </div>
