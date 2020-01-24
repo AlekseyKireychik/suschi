@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>sushi</title>
+    <meta name="catalog__description" content="" />
+
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon-16x16.png"
+    />
+    <meta property="og:image" content="img/preview.jpg" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+
+  <body>
+    <header class="container__header">
+      <div class="container">
+        <div class="row header__top">
+          <div class="header__logo">
+            <a href="">
+              <img src="./images/logo.svg" alt="logo" />
+            </a>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="/" class="header__link">Каталог</a>
+              </li>
+              <li class="header__item">
+                <a href="/" class="header__link">Акции</a>
+              </li>
+              <li class="header__item">
+                <a href="./news.html" class="header__link">Новости</a>
+              </li>
+              <li class="header__item">
+                <a href="./aboutus.html" class="header__link">О нас</a>
+              </li>
+              <li class="header__item">
+                <a href="./vacansii.html" class="header__link">Карьера</a>
+              </li>
+              <li class="header__item">
+                <a href="./reviews.html" class="header__link">Отзывы</a>
+              </li>
+              <li class="header__item">
+                <a href="./lichnyy-kabinet-step-1.html" class="header__link"
+                  >Личный кабинет</a
+                >
+              </li>
+            </ul>
+            <a class="header__radio" href="">Темная тема</a>
+          </nav>
+          <div class="header__function">
+            <a class="header__phone" href="tel:+375441111111"></a>
+            <div class="burger__menu">
+              <a href="#" class="burger__menu__button">
+                <span class="burger__menu__lines"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="basket">
+      <div class="container">
+        <div class="row">
+          <h1 class="title">Корзина</h1>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <form class="form__promocode" action="">
+            <input
+              class="input__promocode"
+              type="text"
+              placeholder="Введите промокод"
+            />
+            <input class="btn__promocode" type="submit" value="Применить" />
+          </form>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <ul class="basket__list">
+            <li class="basket__item">
+              <div class="position__name">
+                <span>Сет "Только мне"</span> <span>16,50 руб.</span>
+              </div>
+              <ul class="position__ingridients">
+                <li>Сяке ясай маки 8 шт</li>
+                <li>Тояма маки 8 шт</li>
+                <li>Авокадо маки 8 шт</li>
+              </ul>
+              <div class="basket__functions">
+                <button type="button" class="basket__cost"></button>
+                <div class="counter">
+                  <button type="button" class="btn__less">-1</button>
+                  <div class="count">1</div>
+                  <button type="button" class="btn__more">+1</button>
+                </div>
+              </div>
+            </li>
+            <li class="basket__item">
+              <div class="position__name">
+                <span>Острый суп с жареным лососем</span> <span>5,6 руб.</span>
+              </div>
+              <ul class="position__ingridients">
+                <li>Сяке ясай маки 8 шт</li>
+                <li>Тояма маки 8 шт</li>
+                <li>Авокадо маки 8 шт</li>
+              </ul>
+              <div class="basket__functions">
+                <button type="button" class="basket__cost"></button>
+                <div class="counter">
+                  <button type="button" class="btn__less">-1</button>
+                  <div class="count">1</div>
+                  <button type="button" class="btn__more">+1</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="description__info">
+            <p>Минимальная сумма заказа для доставки: 15 руб.</p> 
+            <p>Стоимость доставки: 4 руб.</p>
+            <p>При заказе от 65 руб. доставка- бесплатно</p>
+          </div>
+        </div>
+        <div class="row">
+          <h2 class="subTitle">Соусы</h2>
+        </div>
+        <div class="row">
+          <ul class="position__selected">
+            <li class="position__item">
+              <div class="position__description">
+                <img src="./images/Васаби.jpg" alt="Васаби">
+                <div class="position__title">Васаби</div>  
+              </div>              
+              <div class="basket__functions">
+                <span class="position__cost">0.75 руб</span>
+                <div class="counter">
+                  <button type="button" class="btn__less">-1</button>
+                  <div class="count">0</div>
+                  <button type="button" class="btn__more">+1</button>
+                </div>
+              </div>
+            </li>
+            <li class="position__item">
+              <div class="position__description">
+                <img src="./images/Маринованный имбирь.jpg" alt="Имбирь маринованный">
+                <div class="position__title">Имбирь маринованный</div>  
+              </div>              
+              <div class="basket__functions">
+                <span class="position__cost">0.90 руб</span>
+                <div class="counter">
+                  <button type="button" class="btn__less">-1</button>
+                  <div class="count">0</div>
+                  <button type="button" class="btn__more">+1</button>
+                </div>
+              </div>
+            </li>
+            <li class="position__item">
+              <div class="position__description">
+                <img src="./images/Соевый соус.jpg" alt="Соевый соус">
+                <div class="position__title">Соевый соус</div>  
+              </div>              
+              <div class="basket__functions">
+                <span class="position__cost">1.00 руб</span>
+                <div class="counter">
+                  <button type="button" class="btn__less">-1</button>
+                  <div class="count">0</div>
+                  <button type="button" class="btn__more">+1</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <h2 class="subTitle">Приборы</h2>
+          <ul class="position__selected">
+            <li class="position__item">
+              <div class="position__description">
+                <img src="./images/Палочки для суши.jpg" alt="Палочки для суши">
+                <div class="position__title">Палочки для суши</div>  
+              </div>              
+              <div class="basket__functions">
+                <span class="position__cost">0.75 руб</span>
+                <div class="counter">
+                  <button type="button" class="btn__less">-1</button>
+                  <div class="count">0</div>
+                  <button type="button" class="btn__more">+1</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container order">
+        <div class="row">
+          <div class="order__price">
+            <p class="order__text">Сумма заказа:<span class="order__price__value">25.10 руб</span></p>
+            <div class="btn__goup">
+              <button class="btn">Доставка</button>
+              <button class="btn">Самовывоз</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
