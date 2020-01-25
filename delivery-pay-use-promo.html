@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>sushi</title>
+    <meta name="catalog__description" content="" />
+
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon-16x16.png"
+    />
+    <meta property="og:image" content="img/preview.jpg" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+
+  <body>
+    <header class="container__header">
+      <div class="container">
+        <div class="row header__top">
+          <div class="header__logo">
+            <a href="">
+              <img src="./images/logo.svg" alt="logo" />
+            </a>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="./catalog.html" class="header__link">Каталог</a>
+              </li>
+              <li class="header__item">
+                <a href="/" class="header__link">Акции</a>
+              </li>
+              <li class="header__item">
+                <a href="./news.html" class="header__link">Новости</a>
+              </li>
+              <li class="header__item">
+                <a href="./aboutus.html" class="header__link">О нас</a>
+              </li>
+              <li class="header__item">
+                <a href="./vacansii.html" class="header__link">Карьера</a>
+              </li>
+              <li class="header__item">
+                <a href="./reviews.html" class="header__link">Отзывы</a>
+              </li>
+              <li class="header__item">
+                <a href="./lichnyy-kabinet-step-1.html" class="header__link">Личный кабинет</a>
+              </li>
+            </ul>
+            <a class="header__radio" href="">Темная тема</a>
+          </nav>
+          <div class="header__function">
+            <a class="header__phone" href="tel:+375441111111"></a>
+            <div class="burger__menu">
+              <a href="#" class="burger__menu__button">
+                <span class="burger__menu__lines"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="delivery-pay">
+      <div class="container">
+        <div class="row">
+          <h1 class="title">Подтверждение</h1>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="delivery-pay__order">
+            <div class="delivery-pay__order__top">
+              <p>Ваш заказ</p>
+              <button type="button" class="delivery-pay__edit"></button>
+            </div>
+            <ul class="delivery-pay__delivery">
+              <li class="delivery-pay__item">
+                <p class="delivery-pay__name">
+                  Сет "Только мне" <span>16,50 руб.</span>
+                </p>
+                <ul class="delivery-pay__ingridients">
+                  <li>Сяке ясай маки 8 шт</li>
+                  <li>Тояма маки 8 шт</li>
+                  <li>Авокадо маки 8 шт</li>
+                </ul>
+              </li>
+              <li class="delivery-pay__item">
+                <p class="delivery-pay__name">
+                  Острый суп с жареным лососем <span>5,60 руб.</span>
+                </p>
+                <ul class="delivery-pay__ingridients">
+                  <li>Жареный лосось</li>
+                  <li>яичная лапша</li>
+                  <li>зелёный лук</li>
+                  <li>острый соус</li>
+                </ul>
+              </li>
+            </ul>
+            <p class="delivery-pay__result">
+              Сумма к оплате
+              <span class="delivery-pay__result__cost use-promocod">25,10 руб. <span class="promo__description">(промокод на 3 руб.)</span></span>
+            </p>
+            <form class="form__promocode" action="">
+              <input
+                class="input__promocode"
+                type="text"
+                placeholder="Введите промокод"
+              />
+              <input class="btn__promocode" type="submit" value="Применить" />
+            </form>
+          </div>
+          <div class="delivery-pay__user">
+            <div class="delivery-pay__date">
+              <div class="delivery-pay__left">
+                <div id="delivery-pay-name" class="text">Пётр</div>
+                <div id="delivery-pay-phone" class="text">+375 (__) ___-__-__</div>
+              </div>
+              <button type="button" class="delivery-pay__edit"></button>
+            </div>
+            <div class="delivery-pay__date">
+              <div class="delivery-pay__left">
+                <div id="delivery-pay-title" class="text">Адрес доставки</div>
+                <div id="delivery-pay-street" class="text">Минск, улица Пушкина, 111, эт. 1, кв. 1</div>
+                <div id="delivery-pay-time" class="text">Время - 18:30</div>
+              </div>
+              <button type="button" class="delivery-pay__edit"></button>
+            </div>
+          </div>
+          <button class="btn">Подтвердить заказ на 25.10 руб.</button>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

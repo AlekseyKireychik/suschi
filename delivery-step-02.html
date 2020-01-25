@@ -83,7 +83,7 @@
     <main class="delivery">
       <div class="container">
         <div class="row">
-          <h1 class="title">Адрес доставки</h1>
+          <h2 class="title">Адрес доставки</h2>
         </div>
       </div>
       <div class="container">
@@ -174,10 +174,18 @@
                 ></textarea>
                 <label for="comment" class="delivery__label">Комментарий</label>
               </div>
+              <div class="function__time">
+                <p>Выберите подходящее время:</p>
+                <div class="counter">
+                  <button class="less">-15 мин</button>
+                  <span id="count" class="count">10:45</span>
+                  <button class="more">+15 мин</button>
+                </div>
+              </div>
               <div class="form__bottom">
                 <div class="form__box">
-                  <button type="button" id="delivery-btn" class="btn">
-                    Заказать ко времени 
+                  <button type="reset" id="delivery-btn" class="btn">
+                    Сбросить 
                   </button>
                   <button type="submit" id="delivery-btn" class="btn">
                     Далее

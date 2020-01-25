@@ -16,11 +16,17 @@
   border-radius: 10px;
   width: 100%;
   padding: 11px 5px;
+  cursor: pointer;
+  outline-color: transparent;
 }
 .btn:hover,
 .btn:active {
   color: #ffffff;
   text-decoration: none;
+}
+button {
+  cursor: pointer;
+  outline-color: transparent;
 }
 
 /*** Header Start ***/
@@ -1563,7 +1569,7 @@ p.pagenevs__description {
 }
 /*** Basket Page end ***/
 
-/*** Delivery Page start ***/
+/*** Delivery Page step-1-2 start ***/
 .delivery {
   padding: 30px 20px 25px;
   font-family: "Montserrat";
@@ -1578,16 +1584,30 @@ p.pagenevs__description {
 .delivery__form {
   width: 100%;
 }
+.form__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form__row .delivery__group:last-child {
+  margin-left: 10px;
+}
+.form__row .delivery__group:first-child {  
+  margin-right: 10px;
+}
 .delivery__group {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
   position: relative;
+  width: 100%;
+}
+.delivery__group.house {
+  width: auto;
 }
 .delivery__group #house {
   width: 48px;
-
 }
 .delivery__control {
   font-family: "Montserrat";
@@ -1603,6 +1623,9 @@ p.pagenevs__description {
   margin-top: 25px;
   margin-bottom: 15px;
   outline-color: transparent;
+}
+.delivery__group.comment {
+  margin-bottom: 30px;
 }
 .comment .myreview__control {
   resize: none;
@@ -1625,5 +1648,323 @@ p.pagenevs__description {
   align-items: center;
   color: #232735;
 }
+.form__box .btn:first-child {
+  border: 1px solid #E31E24;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  color: #E31E24;
+  background-color: #fff;
+}
+.function__time {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.function__time p {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 10px;
+}
+.function__time .count {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0 10px;
+}
+.function__time button {
+  background: #E31E24;
+  color: #fff;
+  padding: 9px 6px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
 
-/*** Delivery Page end ***/
+/*** Delivery Page step-1-2 end ***/
+
+/*** Delivery Page step-3,5 start ***/
+.delivery.step-3,
+.delivery.step-5 {
+  padding: 30px 20px 25px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+.delivery.step-3 .title,
+.delivery.step-5 .title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+.delivery.step-3 .delivery__form,
+.delivery.step-5 .delivery__form {
+  width: 100%;
+}
+.delivery.step-3 .delivery__group,
+.delivery.step-5 .delivery__group{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+.delivery.step-3 .delivery__control,
+.delivery.step-5 .delivery__control{
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  background: #ffffff;
+  padding: 5px 15px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  border: 1px solid #a1a4b1;
+  border-radius: 4px;
+  width: 100%;
+  outline-color: transparent;
+}
+.delivery.step-3 .delivery__control::placeholder,
+.delivery.step-5 .delivery__control::placeholder {
+  font-size: 12px;
+  line-height: 24px;
+  color: #8b90a0;
+}
+.delivery.step-3 .delivery__label,
+.delivery.step-5 .delivery__label  {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  align-items: center;
+  color: #232735;
+}
+.delivery.step-3 .form__box .btn:first-child,
+.delivery.step-5 .form__box .btn:first-child {
+  border: 1px solid #E31E24;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  color: #E31E24;
+  background-color: #fff;
+}
+
+/*** Delivery Page step 3,5 end ***/
+
+/*** Delivery Page step 4 start ***/
+.delivery.step-4 {
+  padding: 30px 20px 25px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+.delivery.step-4 .title {
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 auto 30px;
+  max-width: 240px;
+}
+.delivery.step-4 .title .maska {
+  display: inline;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.delivery.step-4 .delivery__form {
+  width: 100%;
+  text-align: center;
+}
+.delivery.step-4 .delivery__group {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row;
+}
+.delivery.step-4 .delivery__control {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  background: #ffffff;
+  padding: 5px 8px;
+  border: 1px solid #a1a4b1;
+  border-radius: 4px;
+  margin-bottom: 50px;
+  margin-right: 15px;
+  outline-color: transparent;
+  width: 30px;
+}
+.delivery.step-4 .delivery__control:last-child {
+  margin-right: 0;
+}
+.delivery.step-4 .btn {
+  color: #e31e24;
+  border: 1px solid #e31e24;
+  background-color: #fff;
+  max-width: 165px;
+}
+
+/*** Delivery Page step 4 end ***/
+
+/*** Delivery-pay Page start ***/
+.delivery-pay {
+  padding: 30px 20px 25px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+.delivery-pay .title {
+  margin-bottom: 30px;
+}
+.delivery-pay__order {
+  background: rgba(229, 229, 229, 0.5);
+  border-radius: 10px;
+  width: 100%;
+  padding: 15px 15px 30px;
+  margin-bottom: 15px;
+}
+.delivery-pay__order__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.delivery-pay__order__top p {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 0;
+}
+.delivery-pay__edit {
+  position: relative;
+  border: none;
+  background-color: transparent;
+}
+.delivery-pay__edit::before {
+  position: absolute;
+  content: url(../images/edit.svg);
+  right: 0px;
+  top: 50%;
+}
+.delivery-pay__delivery {
+  margin-bottom: 0;
+}
+.delivery-pay__name {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.delivery-pay__ingridients {
+  margin-bottom: 15px;
+}
+.delivery-pay__result { 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid #898989;
+  padding: 20px 0 15px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.delivery-pay__result__cost.use-promocod {
+  font-weight: 700;
+}
+.delivery-pay__result__cost .promo__description {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+}
+.delivery-pay__user {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  background: rgba(229, 229, 229, 0.5);
+  border-radius: 5px;
+  padding: 30px 15px 20px;
+  margin-bottom: 20px;
+}
+.delivery-pay__date {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+.delivery-pay__date:first-child {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #898989;;
+}
+.delivery-pay__date .text {
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-right: 40px;
+}
+.delivery-pay__date .text:last-child {
+  margin-bottom: 0px;
+}
+
+/*** Delivery-pay Page end ***/
+
+/*** Delivery-pay Page start ***/
+
+.delivery-pay {
+  padding: 30px 20px 25px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+.delivery-pay .title {
+  margin-bottom: 30px;
+}
+.delivery-pay__order {
+  background: rgba(229, 229, 229, 0.5);
+  border-radius: 10px;
+  width: 100%;
+  padding: 15px 15px 30px;
+  margin-bottom: 15px;
+}
+.delivery-pay__order__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.delivery-pay__order__top p {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 0;
+}
+.delivery-pay__edit {
+  position: relative;
+  border: none;
+  background-color: transparent;
+}
+.delivery-pay__edit::before {
+  position: absolute;
+  content: url(../images/edit.svg);
+  right: 0px;
+  top: 50%;
+}
+
+/*** Delivery-pay Page end ***/
