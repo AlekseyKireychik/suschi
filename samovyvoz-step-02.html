@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>sushi</title>
+    <meta name="catalog__description" content="" />
+
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon-16x16.png"
+    />
+    <meta property="og:image" content="img/preview.jpg" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+
+  <body>
+    <header class="container__header">
+      <div class="container">
+        <div class="row header__top">
+          <div class="header__logo">
+            <a href="">
+              <img src="./images/logo.svg" alt="logo" />
+            </a>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="./catalog.html" class="header__link">Каталог</a>
+              </li>
+              <li class="header__item">
+                <a href="/" class="header__link">Акции</a>
+              </li>
+              <li class="header__item">
+                <a href="./news.html" class="header__link">Новости</a>
+              </li>
+              <li class="header__item">
+                <a href="./aboutus.html" class="header__link">О нас</a>
+              </li>
+              <li class="header__item">
+                <a href="./vacansii.html" class="header__link">Карьера</a>
+              </li>
+              <li class="header__item">
+                <a href="./reviews.html" class="header__link">Отзывы</a>
+              </li>
+              <li class="header__item">
+                <a href="./lichnyy-kabinet-step-1.html" class="header__link">Личный кабинет</a>
+              </li>
+            </ul>
+            <a class="header__radio" href="">Темная тема</a>
+          </nav>
+          <div class="header__function">
+            <a class="header__phone" href="tel:+375441111111"></a>
+            <div class="burger__menu">
+              <a href="#" class="burger__menu__button">
+                <span class="burger__menu__lines"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="samovyvoz">
+      <div class="container">
+        <div class="row">
+          <h1 class="title">Точки самовывоза</h1>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="solutions-tab-content">
+            <!--solution tab start-->
+            <div class="solutions-tab">
+              <ul class="nav nav-pills" role="tablist">
+                <li class="nav-item active">
+                  <a href="#list-tab" role="tab" data-toggle="tab">Список</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#map-tab" role="tab" data-toggle="tab">Карта</a>
+                </li>                       
+              </ul>
+            </div>
+            <!--solution tab end-->
+
+              <!--solution tab content start-->
+              <div class="tab-content">
+                <div class="tab-pane active" id="list-tab">
+                  <ul class="samovyvoz__list">
+                    <li class="samovyvoz__item">
+                      <label for="point-01" class="label">
+                        <div class="samovyvoz__info">
+                          <h2 class="samovyvoz__title">РЦ НЛО</h2>
+                          <p class="samovyvoz__adres">Адрес: ул. Якуба Коласа, 37</p>
+                          <p class="samovyvoz__time">Режим работы: Круглосуточно</p>
+                          <p class="samovyvoz__products">Суши - 15 мин, WOK - 15 мин</p>
+                        </div>
+                      </label>
+                      <input
+                        type="radio"
+                        class="control"
+                        name="samovyvoz-point"
+                        value="РЦ НЛО"
+                        id="point-01"
+                      />
+                      <div class="samovyvoz__description">Точка по адресу пр. Партизанский, 150а откроется сегодня в 10:00. Оформите отложенный заказ <a href="#"><img src="./images/fe-warning.svg" alt="info"></a></div>
+                    </li>
+                    <li class="samovyvoz__item">
+                      <label for="point-02" class="label">
+                        <div class="samovyvoz__info">
+                          <h2 class="samovyvoz__title">Машерова</h2>
+                          <p class="samovyvoz__adres">Адрес: ул. Якуба Коласа, 37</p>
+                          <p class="samovyvoz__time">Режим работы: Круглосуточно</p>
+                          <p class="samovyvoz__products">Суши - 15 мин, WOK - 15 мин</p>
+                        </div>
+                      </label>
+                      <input
+                        type="radio"
+                        class="control"
+                        name="samovyvoz-point"
+                        value="Машерова"
+                        id="point-02"
+                      />
+                      <div class="samovyvoz__description">Точка по адресу пр. Партизанский, 150а откроется сегодня в 10:00. Оформите отложенный заказ <a href="#"><img src="./images/fe-warning.svg" alt="info"></a></div>
+                    </li>
+                    <li class="samovyvoz__item">
+                      <label for="point-03" class="label">
+                        <div class="samovyvoz__info">
+                          <h2 class="samovyvoz__title">Налибокская</h2>
+                          <p class="samovyvoz__adres">Адрес: ул. Якуба Коласа, 37</p>
+                          <p class="samovyvoz__time">Режим работы: Круглосуточно</p>
+                          <p class="samovyvoz__products">Суши - 15 мин, WOK - 15 мин</p>
+                        </div>
+                      </label>
+                      <input
+                        type="radio"
+                        class="control"
+                        name="samovyvoz-point"
+                        value="Шафарнянская"
+                        id="point-03"
+                      />
+                      <div class="samovyvoz__description">Точка по адресу пр. Партизанский, 150а откроется сегодня в 10:00. Оформите отложенный заказ <a href="#"><img src="./images/fe-warning.svg" alt="info"></a></div>
+                    </li>
+                    <li class="samovyvoz__item">
+                      <label for="point-04" class="label">
+                        <div class="samovyvoz__info">
+                          <h2 class="samovyvoz__title">Налибокская</h2>
+                          <p class="samovyvoz__adres">Адрес: ул. Якуба Коласа, 37</p>
+                          <p class="samovyvoz__time">Режим работы: Круглосуточно</p>
+                          <p class="samovyvoz__products">Суши - 15 мин, WOK - 15 мин</p>
+                        </div>
+                      </label>
+                      <input
+                        type="radio"
+                        class="control"
+                        name="samovyvoz-point"
+                        value="Шафарнянская"
+                        id="point-04"
+                      />
+                      <div class="samovyvoz__description">Точка по адресу пр. Партизанский, 150а откроется сегодня в 10:00. Оформите отложенный заказ <a href="#"><img src="./images/fe-warning.svg" alt="info"></a></div>
+                    </li>
+                    <li class="samovyvoz__item">
+                      <label for="point-05" class="label">
+                        <div class="samovyvoz__info">
+                          <h2 class="samovyvoz__title">Налибокская</h2>
+                          <p class="samovyvoz__adres">Адрес: ул. Якуба Коласа, 37</p>
+                          <p class="samovyvoz__time">Режим работы: Круглосуточно</p>
+                          <p class="samovyvoz__products">Суши - 15 мин, WOK - 15 мин</p>
+                        </div>
+                      </label>
+                      <input
+                        type="radio"
+                        class="control"
+                        name="samovyvoz-point"
+                        value="Шафарнянская"
+                        id="point-05"
+                      />
+                      <div class="samovyvoz__description">Точка по адресу пр. Партизанский, 150а откроется сегодня в 10:00. Оформите отложенный заказ <a href="#"><img src="./images/fe-warning.svg" alt="info"></a></div>
+                    </li>
+                    <li class="samovyvoz__item">
+                      <label for="point-06" class="label">
+                        <div class="samovyvoz__info">
+                          <h2 class="samovyvoz__title">Налибокская</h2>
+                          <p class="samovyvoz__adres">Адрес: ул. Якуба Коласа, 37</p>
+                          <p class="samovyvoz__time">Режим работы: Круглосуточно</p>
+                          <p class="samovyvoz__products">Суши - 15 мин, WOK - 15 мин</p>
+                        </div>
+                      </label>
+                      <input
+                        type="radio"
+                        class="control"
+                        name="samovyvoz-point"
+                        value="Шафарнянская"
+                        id="point-06"
+                      />
+                      <div class="samovyvoz__description">Точка по адресу пр. Партизанский, 150а откроется сегодня в 10:00. Оформите отложенный заказ <a href="#"><img src="./images/fe-warning.svg" alt="info"></a></div>
+                    </li>
+                    <li class="samovyvoz__item">
+                      <label for="point-07" class="label">
+                        <div class="samovyvoz__info">
+                          <h2 class="samovyvoz__title">Шафарнянская</h2>
+                          <p class="samovyvoz__adres">Адрес: ул. Якуба Коласа, 37</p>
+                          <p class="samovyvoz__time">Режим работы: Круглосуточно</p>
+                          <p class="samovyvoz__products">Суши - 15 мин, WOK - 15 мин</p>
+                        </div>
+                      </label>
+                      <input
+                        type="radio"
+                        class="control"
+                        name="samovyvoz-point"
+                        value="Шафарнянская"
+                        id="point-07"
+                      />
+                      <div class="samovyvoz__description">Точка по адресу пр. Партизанский, 150а откроется сегодня в 10:00. Оформите отложенный заказ <a href="#"><img src="./images/fe-warning.svg" alt="info"></a></div>
+                    </li>
+                  </ul>
+                  <div class="function__time">
+                    <p>Выберите подходящее время:</p>
+                    <div class="counter">
+                      <button class="less">-15 мин</button>
+                      <span id="count" class="count">10:45</span>
+                      <button class="more">+15 мин</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane map" id="map-tab">
+                  <div class="map__container">
+                    <img src="./images/MapsicleMap.jpg" alt="пр-т. Машерова, 78">
+                  </div>
+                  <p class="selected__title">Выбранная точка:</p>
+                  <p class="selected__address">пр-т. Машерова, 78</p>
+                </div>                   
+              </div>           
+              <!--solution tab content end-->
+            </div>
+          </div>
+      </div>      
+      <div class="button__box">
+        <button type="button" id="btn" class="btn submit">
+        Заказать ко времени
+        </button>
+        <button type="button" id="btn" class="btn submit">
+          Далее
+        </button>
+      </div>
+    </main>
+    <footer></footer>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

@@ -80,82 +80,66 @@
         </div>
       </div>
     </header>
-    <main class="delivery-pay-form">
+    <main class="samovyvoz-confirmation">
       <div class="container">
         <div class="row">
-          <h1 class="title">Оплата</h1>
+          <h1 class="title">Подтверждение</h1>
         </div>
       </div>
       <div class="container">
         <div class="row">
-          <form action="" method="" id="form-pay" class="form-pay">
-            <div class="formWrap">
-              <div class="delivery-pay__group group-01 is-active">
-                <div class="group-01__top">
-                  <label for="cash" class="label">Наличными</label>
-                  <input
-                    type="radio"
-                    class="control"
-                    name="pay"
-                    value="cash"
-                    id="cash"
-                  />            
-                </div>  
-                <div class="group-01__bottom">
-                  <input
-                  type="text"
-                  class="result-value"
-                  name="result-value"
-                  id="result-value"
-                  placeholder="C какой суммы подготовить сдачу?"
-                  />
-                  <div class="btn__group">
-                    <input value="50 руб" type="button">
-                    <input value="100 руб" type="button">
-                    <input value="Без сдачи" type="button">
-                  </div>
-                </div>  
-              </div>              
-              <div class="delivery-pay__group group-02">
-                <label for="courier" class="label">Картой курьеру</label>
-                <input
-                  type="radio"
-                  class="control"
-                  name="pay"
-                  value="courier"
-                  id="courier"
-                />                
-              </div>
-              <div class="delivery-pay__group group-03">
-                <div class="group-03__top">
-                  <label for="site" class="label">Картой на сайте</label>
-                  <input
-                    type="radio"
-                    class="control"
-                    name="pay"
-                    value="site"
-                    id="site"
-                  />
-                </div>
-              </div>
+          <div class="samovyvoz__order">
+            <div class="samovyvoz__order__top">
+              <p>Ваш заказ</p>
+              <button type="button" class="samovyvoz__edit"></button>
             </div>
-            <input type="hidden" name="culturecode">
-            <input type="hidden" name="url">
-            <div class="form__bottom">
-              <div class="form-check__wrap">
-                <div class="form-pay form-check">  
-                  <input class="form__check-input" placeholder="" required type="checkbox" id="check1">  
-                  <label class="form__check-label" for="check1">Я принимаю <a class="info" href="#">условия оплаты и доставки</a></label> 
-                </div>
-                <a class="info__icon" href="#"></a> 
+            <ul class="samovyvoz__delivery">
+              <li class="samovyvoz__item">
+                <p class="samovyvoz__name">
+                  Сет "Только мне" <span>16,50 руб.</span>
+                </p>
+                <ul class="samovyvoz__ingridients">
+                  <li>Сяке ясай маки 8 шт</li>
+                  <li>Тояма маки 8 шт</li>
+                  <li>Авокадо маки 8 шт</li>
+                </ul>
+              </li>
+              <li class="samovyvoz__item">
+                <p class="samovyvoz__name">
+                  Острый суп с жареным лососем <span>5,60 руб.</span>
+                </p>
+                <ul class="samovyvoz__ingridients">
+                  <li>Жареный лосось</li>
+                  <li>яичная лапша</li>
+                  <li>зелёный лук</li>
+                  <li>острый соус</li>
+                </ul>
+              </li>
+            </ul>
+            <p class="samovyvoz__result">
+              Сумма к оплате
+              <span class="samovyvoz__result__cost">25,10 руб.</span>
+            </p>
+            <form class="form__promocode" action="">
+              <input
+                class="input__promocode"
+                type="text"
+                placeholder="Введите промокод"
+              />
+              <input class="btn__promocode" type="submit" value="Применить" />
+            </form>
+          </div>
+          <div class="samovyvoz__user">
+            <div class="samovyvoz__date">
+              <div class="samovyvoz__left">
+                <div id="samovyvoz-name" class="text">Самовывоз в 11:45 из точки по адресу</div>
+                <div id="samovyvoz-address" class="address">Минск, пр. Партизанский, 150а</div>
+                <div id="samovyvoz-metro" class="metro">Могилевская</div>
               </div>
-              <div class="form__box">
-                <button type="submit" id="btn" class="btn submit">
-                Оплатить заказ на 25.10 руб.
-                </button>
-              </div>
-            </div>				
-          </form>
+              <button type="button" class="samovyvoz__edit"></button>
+            </div>            
+          </div>
+          <button class="btn">Подтвердить заказ на 25.10 руб.</button>
         </div>
       </div>
     </main>

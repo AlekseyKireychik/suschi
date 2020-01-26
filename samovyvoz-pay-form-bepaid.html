@@ -80,7 +80,7 @@
         </div>
       </div>
     </header>
-    <main class="delivery-pay-form">
+    <main class="samovyvoz-pay-form">
       <div class="container">
         <div class="row">
           <h1 class="title">Оплата</h1>
@@ -90,7 +90,7 @@
         <div class="row">
           <form action="" method="" id="form-pay" class="form-pay">
             <div class="formWrap">
-              <div class="delivery-pay__group group-01 is-active">
+              <div class="samovyvoz-pay__group group-01">
                 <div class="group-01__top">
                   <label for="cash" class="label">Наличными</label>
                   <input
@@ -116,7 +116,7 @@
                   </div>
                 </div>  
               </div>              
-              <div class="delivery-pay__group group-02">
+              <div class="samovyvoz-pay__group group-02">
                 <label for="courier" class="label">Картой курьеру</label>
                 <input
                   type="radio"
@@ -126,7 +126,7 @@
                   id="courier"
                 />                
               </div>
-              <div class="delivery-pay__group group-03">
+              <div class="samovyvoz-pay__group group-03 is-active">               
                 <div class="group-03__top">
                   <label for="site" class="label">Картой на сайте</label>
                   <input
@@ -135,8 +135,50 @@
                     name="pay"
                     value="site"
                     id="site"
-                  />
-                </div>
+                  />            
+                </div>  
+                <div class="group-03__bottom">
+                  <div class="card__date__top">
+                    <label for="num-card" class="label">Номер Карты*</label>
+                    <input
+                    type="text"
+                    class="card"
+                    name="num-card"
+                    id="num-card"
+                    placeholder="XXXX-XXXX-XXXX-XXXX"
+                    required
+                    />                    
+                  </div>
+                  <div class="input__group">
+                    <div class="card__date">
+                      <label for="validity" class="label">Срок действия*</label>
+                      <input
+                      type="text"
+                      class="card"
+                      name="validity"
+                      id="validity"
+                      placeholder="__/__"
+                      required
+                      />                      
+                    </div>
+                    <div class="card__date">
+                      <label for="num-card" class="label">CVC*</label>
+                      <input
+                      type="text"
+                      class="card"
+                      name="num-card"
+                      id="num-card"
+                      placeholder=" "
+                      required
+                      />                      
+                    </div>
+                  </div>
+                  <div class="cards__logo">
+                    <img src="./images/logos-mastercard.png" alt="mastercard">
+                    <img src="./images/logos-visa.png" alt="visa">
+                  </div>
+                  <p class="description__info">Платеж безопасен. Мы не храним данные карт, все операйции проводит BePaid - платежная система, сертифицированная по международному стандарту безопасности PCI DSS</p>
+                </div>  
               </div>
             </div>
             <input type="hidden" name="culturecode">
@@ -145,9 +187,16 @@
               <div class="form-check__wrap">
                 <div class="form-pay form-check">  
                   <input class="form__check-input" placeholder="" required type="checkbox" id="check1">  
-                  <label class="form__check-label" for="check1">Я принимаю <a class="info" href="#">условия оплаты и доставки</a></label> 
-                </div>
-                <a class="info__icon" href="#"></a> 
+                  <label class="form__check-label" for="check1">Подписаться на рассылку</label> 
+                </div> 
+                <a class="info__icon" href="#"></a>
+              </div>
+              <div class="form-check__wrap">
+                <div class="form-pay form-check">  
+                  <input class="form__check-input" placeholder="" required type="checkbox" id="check2">  
+                  <label class="form__check-label" for="check2">Я принимаю <a class="info" href="#">условия оплаты и доставки</a></label> 
+                </div> 
+                <a class="info__icon" href="#"></a>
               </div>
               <div class="form__box">
                 <button type="submit" id="btn" class="btn submit">
