@@ -310,3 +310,13 @@
     width: 90px;
   }
 } */
+
+@media screen and (min-width: 576px) {
+  .wok .products__list {
+    padding-left: calc((100vw - 540px)/2);
+  }
+  .wok .osition__item h2 {
+    padding-left: calc(((100vw - 540px)/2) + 20px);
+  }
+  
+}

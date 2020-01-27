@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 
 
 .title {
@@ -69,7 +71,9 @@ header {
     cubic-bezier(0.79, 0.14, 0.15, 0.86);
   transition: -webkit-transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
   -o-transition: transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
   transition: transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
+  transition: transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86), -webkit-transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
   transition: transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86),
     -webkit-transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
   -webkit-transform: translate3d(-99%, 0, 0);
@@ -2160,6 +2164,26 @@ p.pagenevs__description {
   line-height: 24px;
   color: #8b90a0;
 }
+.delivery.step-3 .delivery__control::-webkit-input-placeholder, .delivery.step-5 .delivery__control::-webkit-input-placeholder {
+  font-size: 12px;
+  line-height: 24px;
+  color: #8b90a0;
+}
+.delivery.step-3 .delivery__control::-moz-placeholder, .delivery.step-5 .delivery__control::-moz-placeholder {
+  font-size: 12px;
+  line-height: 24px;
+  color: #8b90a0;
+}
+.delivery.step-3 .delivery__control:-ms-input-placeholder, .delivery.step-5 .delivery__control:-ms-input-placeholder {
+  font-size: 12px;
+  line-height: 24px;
+  color: #8b90a0;
+}
+.delivery.step-3 .delivery__control::-ms-input-placeholder, .delivery.step-5 .delivery__control::-ms-input-placeholder {
+  font-size: 12px;
+  line-height: 24px;
+  color: #8b90a0;
+}
 .delivery.step-3 .delivery__control::placeholder,
 .delivery.step-5 .delivery__control::placeholder {
   font-size: 12px;
@@ -3432,7 +3456,7 @@ p.pagenevs__description {
 /*** WOK Page start ***/
 
 .wok {
-  padding: 30px 20px 25px;
+  padding: 30px 0px 25px;
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 12px;
@@ -3441,9 +3465,13 @@ p.pagenevs__description {
 }
 .wok .title {
   margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .wok .solutions-tab-content {
   width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .wok .solutions-tab {
   width: 100%;
@@ -3501,5 +3529,237 @@ p.pagenevs__description {
 .wok .sub-tab .nav-item:last-child {
   margin-right: 0px;
 }
+.wok .osition__list {
+  margin-bottom: 30px;  
+}
+.wok .osition__item {
+  overflow: hidden;
+}
+.wok .osition__item h2 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.wok .products__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: -20px;
+  padding-bottom: 35px;
+  overflow-y: auto;
+}
+.wok .products__item {
+  margin-right: 12px;
+}
+.wok .products__item:last-child {
+  border-right: 19px solid transparent;
+}
+.wok .products__item:hover img,
+.wok .products__item:active img {
+  border: 3px solid #E31E24;
+}
+.wok .products__item:first-child {
+  margin-left: 20px;
+}
+.wok .products__item img {
+  border-radius: 5px;
+  border: 3px solid transparent;
+  
+}
+.wok .products__item p {
+  max-width: 115px;
+  font-size: 10px;
+  line-height: 12px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  
+}
+.wok .products__item span {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  margin-bottom: 0;
+  
+}
+.wok .cost__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.wok .cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.wok .cost__text {
+  margin-bottom: 0;
+  font-size: 10px;
+  line-height: 12px;
+  margin-right: 10px;
+}
+.wok .cost__value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+.wok .cost__value div{
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  margin-left: 5px;
+}
+.wok .button__box {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+}
+.wok .ready__wok__title {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 0;
+}
+.wok .ready__wok {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.wok .wok__description {
+  margin-left: 20px;
+}
+.wok .wok__description h3 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+.wok .wok__description p {  
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  margin-bottom: 10px;
+}
+.wok .wok__description button {
+  padding: 11px 7px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  width: auto;
+}
+.wok .wok__description button span {
+  font-size: 14px;
+  line-height: 17px;
+}
+.wok .busket__icon {
+  position: fixed;
+  right: 15px;
+  top: 50%;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  z-index: 99;
+}
+.wok .busket__iconWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  background: #e31e24;
+  -webkit-box-shadow: 0px 4px 50px rgba(227, 30, 36, 0.5);
+  box-shadow: 0px 4px 50px rgba(227, 30, 36, 0.5);
+}
+.wok .busket__value {
+  display: none;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  color: #000000;
+  border: 1px solid #e31e24;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 0px 5px;
+  margin-top: -12px;
+}
+.wok .busket__value {
+  display: none;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  color: #000000;
+  border: 1px solid #e31e24;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 0px 5px;
+  margin-top: -12px;
+}
+.wok .busket__value.is-active {
+  display: block;
+}
+
 
 /*** WOK Page end ***/
