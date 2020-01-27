@@ -35,11 +35,11 @@ let myNav = function() {
 };
 myNav();
 
-// let personalAreaBtn = document.querySelectorAll(".history__list button");
-// personalAreaBtn.forEach(item => {
-//   item.addEventListener("click", showOrders);
-// });
-// function showOrders() {
-//   this.classList.add("is-active");
-//   this.innerHTML = "Оставить отзыв"; 
-// }
+let personalAreaBtn = document.querySelectorAll(".history__list button");
+personalAreaBtn.forEach(item => {
+  item.addEventListener("click", showOrders);
+});
+function showOrders() {
+  this.classList.add("is-active");
+  this.innerHTML = "Оставить отзыв"; 
+}
