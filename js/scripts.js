@@ -11,10 +11,11 @@ function addOrder() {
   this.classList.toggle("is-active");
 }
 
-let btnAdd = document.querySelector(".btn");
+let btnAdd = document.querySelectorAll(".btn");
 let btnRemoveActive = document.querySelector(".product__btn__less");
-
-btnAdd.addEventListener("click", addOrderTwo);
+btnAdd.forEach(item => {
+  item.addEventListener("click", addOrderTwo);
+});
 
 function addOrderTwo() {
   event.preventDefault();
@@ -41,5 +42,5 @@ personalAreaBtn.forEach(item => {
 });
 function showOrders() {
   this.classList.add("is-active");
-  this.innerHTML = "Оставить отзыв"; 
+  this.innerHTML = "Оставить отзыв";
 }
