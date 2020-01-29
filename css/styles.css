@@ -27,7 +27,13 @@
 .btn:active {
   color: #ffffff;
   text-decoration: none;
+  outline: none;
 }
+*:hover,
+*:active {
+  outline: transparent;
+}
+
 button {
   cursor: pointer;
   outline-color: transparent;
@@ -252,12 +258,13 @@ header {
   -o-object-fit: cover;
   object-fit: cover;
 }
-/*** Home banner end ***/
-
-/*** Form promocode start ***/
 .home .form__promocode {
   margin: 0 20px;
 }
+/*** Home banner end ***/
+
+/*** Form promocode start ***/
+
 .form__promocode {
   position: relative;
   display: -webkit-box;
@@ -284,12 +291,15 @@ header {
   border-radius: 5px;
   width: 100%;
   outline-color: transparent;
+  text-transform: uppercase;
 }
+
 .input__promocode::-webkit-input-placeholder {
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
+  text-transform: initial;
   color: rgba(29, 30, 28, 0.6);
 }
 .input__promocode::-moz-placeholder {
@@ -297,6 +307,7 @@ header {
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
+  text-transform: initial;
   color: rgba(29, 30, 28, 0.6);
 }
 .input__promocode:-ms-input-placeholder {
@@ -304,6 +315,7 @@ header {
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
+  text-transform: initial;
   color: rgba(29, 30, 28, 0.6);
 }
 .input__promocode::-ms-input-placeholder {
@@ -311,6 +323,7 @@ header {
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
+  text-transform: initial;
   color: rgba(29, 30, 28, 0.6);
 }
 .input__promocode::placeholder {
@@ -318,8 +331,10 @@ header {
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
+  text-transform: initial;
   color: rgba(29, 30, 28, 0.6);
 }
+
 .btn__promocode {
   position: absolute;
   right: 0;
@@ -328,11 +343,16 @@ header {
   font-weight: 600;
   font-size: 12px;
   line-height: 15px;
-  color: #e31e24;
+  background: #E31E24;
+  color: #FFFFFF;
   border: 1px solid #e31e24;
   border-radius: 5px;
-  background-color: #fff;
+ 
   padding: 7px 23px;
+}
+.input__promocode:placeholder-shown + .btn__promocode {
+  color: #e31e24;  
+  background-color: #fff;
 }
 
 /*** Form promocode end ***/
@@ -1985,13 +2005,16 @@ p.pagenevs__description {
   line-height: 24px;
   color: #000000;
   background: #ffffff;
-  padding: 12px 8px;
+  padding: 4.5px 8px;
   border: 1px solid #a1a4b1;
   border-radius: 4px;
   width: 100%;
   margin-top: 25px;
   margin-bottom: 15px;
   outline-color: transparent;
+}
+.comment .delivery__control {
+  margin-bottom: 0px;
 }
 .delivery__group.comment {
   margin-bottom: 30px;
@@ -2132,7 +2155,7 @@ p.pagenevs__description {
   line-height: 24px;
   color: #000000;
   background: #ffffff;
-  padding: 5px 15px;
+  padding: 4.5px 15px;
   margin-top: 0;
   margin-bottom: 15px;
   border: 1px solid #a1a4b1;
@@ -2264,7 +2287,7 @@ p.pagenevs__description {
   line-height: 24px;
   color: #000000;
   background: #ffffff;
-  padding: 5px 8px;
+  padding: 4.5px 8px;
   border: 1px solid #a1a4b1;
   border-radius: 4px;
   margin-bottom: 50px;
@@ -2577,7 +2600,7 @@ p.pagenevs__description {
   width: 100%;
 }
 .delivery-pay-form .group-01__bottom .result-value {
-  padding: 9.5px 15px;
+  padding: 10px 15px;
   background: #ffffff;
   border: 1px solid #a1a4b1;
   border-radius: 4px;
@@ -2652,7 +2675,7 @@ p.pagenevs__description {
   width: 100%;
 }
 .delivery-pay-form .group-03__bottom input {
-  padding: 9.5px 15px;
+  padding: 10px 15px;
   background: #ffffff;
   border: 1px solid #a1a4b1;
   border-radius: 4px;
@@ -2791,6 +2814,19 @@ p.pagenevs__description {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   cursor: pointer;
+}
+.delivery-pay-form .info__icon::after {
+  display: none;
+  position: absolute;
+  content: url(../images/Предупреждение.svg);
+  right: -7px;
+  top: -40px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.delivery-pay-form .info__icon:hover::after {
+  display: block;
 }
 .delivery-pay-form .form__box {
   margin-top: 30px;

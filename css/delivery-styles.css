@@ -1,0 +1,1233 @@
+
+
+
+.title {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+  }
+  .btn {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #ffffff;
+    background: #e31e24;
+    border-radius: 10px;
+    width: 100%;
+    padding: 11px 5px;
+    cursor: pointer;
+    outline-color: transparent;
+  }
+  .btn:hover,
+  .btn:active {
+    color: #ffffff;
+    text-decoration: none;
+    outline: none;
+  }
+  *:hover,
+  *:active {
+    outline: transparent;
+  }
+  
+  button {
+    cursor: pointer;
+    outline-color: transparent;
+  }
+  
+  /*** Header Start ***/
+  header {
+    -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .header__top {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .header__nav {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: calc(100vh - 80px);
+    height: 100%;
+    z-index: 9999;
+    -webkit-transition: -webkit-transform 0.5s
+      cubic-bezier(0.79, 0.14, 0.15, 0.86);
+    transition: -webkit-transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
+    -o-transition: transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
+    transition: transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
+    transition: transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86), -webkit-transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
+    transition: transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86),
+      -webkit-transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
+    -webkit-transform: translate3d(-99%, 0, 0);
+    transform: translate3d(-99%, 0, 0);
+    left: -1%;
+    background-color: #fff;
+  }
+  .header__nav.is-active {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .header__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 30px 0px 20px;
+    margin: 0 20px;
+    border-bottom: 2px solid #e31e24;
+  }
+  .header__item {
+    margin-bottom: 10px;
+  }
+  .header__item:last-child {
+    margin-bottom: 0px;
+  }
+  .header__link {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .header__link:hover,
+  .header__link:active,
+  .header__link:focus {
+    color: #e31e24;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+  .header__radio {
+    position: relative;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    padding-top: 25px;
+    padding-right: 46px;
+  }
+  .header__radio:hover,
+  .header__radio:active,
+  .header__radio:focus {
+    color: #e31e24;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+  .header__radio:before {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    background-color: #e31e24;
+    content: url("../images/fa-solid_lightbulb.svg");
+    right: 0px;
+    top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .header__phone {
+    position: relative;
+  }
+  .header__phone:before {
+    position: absolute;
+    content: url("../images/phone-icon.svg");
+    left: -60px;
+    top: 0px;
+  }
+  .burger__menu__button {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #e31e24;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+    z-index: 991;
+  }
+  .burger__menu__lines {
+    position: absolute;
+    width: 13.75px;
+    height: 3.6px;
+    top: 47%;
+    right: 58%;
+    -webkit-transform: translate(50%);
+    -ms-transform: translate(50%);
+    transform: translate(50%);
+    background-color: #fff;
+  }
+  .burger__menu__lines::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 3.6px;
+    background-color: #fff;
+    top: -7.2px;
+  }
+  .burger__menu__lines::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 3.6px;
+    background-color: #fff;
+    top: 7.2px;
+  }
+  
+  .burger__menu.is-active .burger__menu__lines {
+    background-color: transparent;
+  }
+  
+  .burger__menu.is-active .burger__menu__lines::before {
+    width: 20px;
+    top: 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  .burger__menu.is-active .burger__menu__lines::after {
+    top: 0;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  /*** Form promocode start ***/
+
+.form__promocode {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+  }
+  .input__promocode {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    background-color: #fff;
+    padding: 7px 133px 7px 23px;
+    color: #000000;
+    border: 1px solid #e31e24;
+    border-radius: 5px;
+    width: 100%;
+    outline-color: transparent;
+    text-transform: uppercase;
+  }
+  
+  .input__promocode::-webkit-input-placeholder {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: initial;
+    color: rgba(29, 30, 28, 0.6);
+  }
+  .input__promocode::-moz-placeholder {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: initial;
+    color: rgba(29, 30, 28, 0.6);
+  }
+  .input__promocode:-ms-input-placeholder {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: initial;
+    color: rgba(29, 30, 28, 0.6);
+  }
+  .input__promocode::-ms-input-placeholder {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: initial;
+    color: rgba(29, 30, 28, 0.6);
+  }
+  .input__promocode::placeholder {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: initial;
+    color: rgba(29, 30, 28, 0.6);
+  }
+  
+  .btn__promocode {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    background: #E31E24;
+    color: #FFFFFF;
+    border: 1px solid #e31e24;
+    border-radius: 5px;
+   
+    padding: 7px 23px;
+  }
+  .input__promocode:placeholder-shown + .btn__promocode {
+    color: #e31e24;  
+    background-color: #fff;
+  }
+  
+  /*** Form promocode end ***/
+  
+
+  /*** Delivery Page step-1-2 start ***/
+.delivery {
+    padding: 30px 20px 25px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+  }
+  .delivery .title {
+    margin-bottom: 20px;
+  }
+  .delivery__form {
+    width: 100%;
+  }
+  .form__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .form__row .delivery__group:last-child {
+    margin-left: 10px;
+  }
+  .form__row .delivery__group:first-child {
+    margin-right: 10px;
+  }
+  .delivery__group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+  }
+  .delivery__group.house {
+    width: auto;
+  }
+  .delivery__group #house {
+    width: 48px;
+  }
+  .delivery__control {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    background: #ffffff;
+    padding: 4.5px 8px;
+    border: 1px solid #a1a4b1;
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    outline-color: transparent;
+  }
+  .comment .delivery__control {
+    margin-bottom: 0px;
+  }
+  .delivery__group.comment {
+    margin-bottom: 30px;
+  }
+  .comment .myreview__control {
+    resize: none;
+  }
+  .delivery__control::-webkit-input-placeholder {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #8b90a0;
+  }
+  .delivery__control::-moz-placeholder {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #8b90a0;
+  }
+  .delivery__control:-ms-input-placeholder {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #8b90a0;
+  }
+  .delivery__control::-ms-input-placeholder {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #8b90a0;
+  }
+  .delivery__control::placeholder {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #8b90a0;
+  }
+  .delivery__label {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #232735;
+  }
+  .delivery .form__box .btn:first-child {
+    border: 1px solid #e31e24;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    color: #e31e24;
+    background-color: #fff;
+  }
+  .function__time {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .function__time p {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 10px;
+  }
+  .function__time .count {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0 10px;
+  }
+  .function__time button {
+    background: #e31e24;
+    color: #fff;
+    padding: 9px 6px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  
+  /*** Delivery Page step-1-2 end ***/
+  
+  /*** Delivery Page step-3,5 start ***/
+  .delivery.step-3,
+  .delivery.step-5 {
+    padding: 30px 20px 25px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+  }
+  .delivery.step-3 .title,
+  .delivery.step-5 .title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 auto 28px;
+    text-align: center;
+  }
+  
+  .delivery.step-3 .delivery__form,
+  .delivery.step-5 .delivery__form {
+    width: 100%;
+  }
+  .delivery.step-3 .delivery__group,
+  .delivery.step-5 .delivery__group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+  }
+  .delivery.step-3 .delivery__control,
+  .delivery.step-5 .delivery__control {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    background: #ffffff;
+    padding: 4.5px 15px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border: 1px solid #a1a4b1;
+    border-radius: 4px;
+    width: 100%;
+    outline-color: transparent;
+  }
+  .delivery.step-3 .delivery__control::-webkit-input-placeholder,
+  .delivery.step-5 .delivery__control::-webkit-input-placeholder {
+    font-size: 12px;
+    line-height: 24px;
+    color: #8b90a0;
+  }
+  .delivery.step-3 .delivery__control::-moz-placeholder,
+  .delivery.step-5 .delivery__control::-moz-placeholder {
+    font-size: 12px;
+    line-height: 24px;
+    color: #8b90a0;
+  }
+  .delivery.step-3 .delivery__control:-ms-input-placeholder,
+  .delivery.step-5 .delivery__control:-ms-input-placeholder {
+    font-size: 12px;
+    line-height: 24px;
+    color: #8b90a0;
+  }
+  .delivery.step-3 .delivery__control::-ms-input-placeholder,
+  .delivery.step-5 .delivery__control::-ms-input-placeholder {
+    font-size: 12px;
+    line-height: 24px;
+    color: #8b90a0;
+  }
+  .delivery.step-3 .delivery__control::-webkit-input-placeholder, .delivery.step-5 .delivery__control::-webkit-input-placeholder {
+    font-size: 12px;
+    line-height: 24px;
+    color: #8b90a0;
+  }
+  .delivery.step-3 .delivery__control::-moz-placeholder, .delivery.step-5 .delivery__control::-moz-placeholder {
+    font-size: 12px;
+    line-height: 24px;
+    color: #8b90a0;
+  }
+  .delivery.step-3 .delivery__control:-ms-input-placeholder, .delivery.step-5 .delivery__control:-ms-input-placeholder {
+    font-size: 12px;
+    line-height: 24px;
+    color: #8b90a0;
+  }
+  .delivery.step-3 .delivery__control::-ms-input-placeholder, .delivery.step-5 .delivery__control::-ms-input-placeholder {
+    font-size: 12px;
+    line-height: 24px;
+    color: #8b90a0;
+  }
+  .delivery.step-3 .delivery__control::placeholder,
+  .delivery.step-5 .delivery__control::placeholder {
+    font-size: 12px;
+    line-height: 24px;
+    color: #8b90a0;
+  }
+  .delivery.step-3 .delivery__label,
+  .delivery.step-5 .delivery__label {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #232735;
+  }
+  .delivery.step-3 .form__box .btn:first-child,
+  .delivery.step-5 .form__box .btn:first-child {
+    border: 1px solid #e31e24;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    color: #e31e24;
+    background-color: #fff;
+  }
+  
+  /*** Delivery Page step 3,5 end ***/
+  
+  /*** Delivery Page step 4 start ***/
+  .delivery.step-4 {
+    padding: 30px 20px 25px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+  }
+  .delivery.step-4 .title {
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 auto 30px;
+    max-width: 240px;
+  }
+  .delivery.step-4 .title .maska {
+    display: inline;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  .delivery.step-4 .delivery__form {
+    width: 100%;
+    text-align: center;
+  }
+  .delivery.step-4 .delivery__group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .delivery.step-4 .delivery__control {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    background: #ffffff;
+    padding: 4.5px 8px;
+    border: 1px solid #a1a4b1;
+    border-radius: 4px;
+    margin-bottom: 50px;
+    margin-right: 15px;
+    outline-color: transparent;
+    width: 30px;
+  }
+  .delivery.step-4 .delivery__control:last-child {
+    margin-right: 0;
+  }
+  .delivery.step-4 .btn {
+    color: #e31e24;
+    border: 1px solid #e31e24;
+    background-color: #fff;
+    max-width: 165px;
+  }
+  
+  /*** Delivery Page step 4 end ***/
+  
+  /*** Delivery-pay Page start ***/
+  .delivery-pay {
+    padding: 30px 20px 25px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+  }
+  .delivery-pay .title {
+    margin-bottom: 30px;
+  }
+  .delivery-pay__order {
+    background: rgba(229, 229, 229, 0.5);
+    border-radius: 10px;
+    width: 100%;
+    padding: 15px 15px 30px;
+    margin-bottom: 15px;
+  }
+  .delivery-pay__order__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .delivery-pay__order__top p {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 0;
+  }
+  .delivery-pay__edit {
+    position: relative;
+    border: none;
+    background-color: transparent;
+  }
+  .delivery-pay__edit::before {
+    position: absolute;
+    content: url(../images/edit.svg);
+    right: 0px;
+    top: 50%;
+  }
+  .delivery-pay__delivery {
+    margin-bottom: 0;
+  }
+  .delivery-pay__name {
+    margin-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .delivery-pay__ingridients {
+    margin-bottom: 15px;
+  }
+  .delivery-pay__result {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-top: 2px solid #898989;
+    padding: 20px 0 15px;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  .delivery-pay__result__cost.use-promocod {
+    font-weight: 700;
+  }
+  .delivery-pay__result__cost .promo__description {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .delivery-pay__user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    background: rgba(229, 229, 229, 0.5);
+    border-radius: 5px;
+    padding: 30px 15px 20px;
+    margin-bottom: 20px;
+  }
+  .delivery-pay__date {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .delivery-pay__date:first-child {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #898989;
+  }
+  .delivery-pay__date .text {
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-right: 40px;
+  }
+  .delivery-pay__date .text:last-child {
+    margin-bottom: 0px;
+  }
+  
+  /*** Delivery-pay Page end ***/
+  
+  /*** Delivery-pay Page start ***/
+  
+  .delivery-pay {
+    padding: 30px 20px 25px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+  }
+  .delivery-pay .title {
+    margin-bottom: 30px;
+  }
+  .delivery-pay__order {
+    background: rgba(229, 229, 229, 0.5);
+    border-radius: 10px;
+    width: 100%;
+    padding: 15px 15px 30px;
+    margin-bottom: 15px;
+  }
+  .delivery-pay__order__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .delivery-pay__order__top p {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 0;
+  }
+  .delivery-pay__edit {
+    position: relative;
+    border: none;
+    background-color: transparent;
+  }
+  .delivery-pay__edit::before {
+    position: absolute;
+    content: url(../images/edit.svg);
+    right: 0px;
+    top: 50%;
+  }
+  
+  /*** Delivery-pay Page end ***/
+  
+  /*** Delivery-pay-form Page start ***/
+  
+  .delivery-pay-form {
+    padding: 30px 20px 25px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+  }
+  .delivery-pay-form .title {
+    margin-bottom: 30px;
+  }
+  .delivery-pay-form {
+    width: 100%;
+  }
+  .delivery-pay-form .form-pay {
+    width: 100%;
+  }
+  .delivery-pay-form .formWrap {
+    background: rgba(229, 229, 229, 0.5);
+    border-radius: 5px;
+  }
+  .delivery-pay__group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .delivery-pay-form .delivery-pay__group .control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #e31e24;
+    border-radius: 50%;
+    -webkit-transition: 0.2s all linear;
+    -o-transition: 0.2s all linear;
+    transition: 0.2s all linear;
+    outline: none;
+  }
+  
+  .delivery-pay-form .delivery-pay__group .control:checked {
+    background: #e31e24;
+  }
+  .delivery-pay-form .delivery-pay__group .label {
+    margin-bottom: 0;
+  }
+  .delivery-pay-form .group-01 {
+    padding: 30px 15px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .delivery-pay-form .group-01.is-active .group-01__top {
+    margin-bottom: 20px;
+  }
+  .delivery-pay-form .group-01__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .delivery-pay-form .group-01.is-active .group-01__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .delivery-pay-form .group-01 .group-01__bottom {
+    display: none;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+  }
+  .delivery-pay-form .group-01__bottom .result-value {
+    padding: 10px 15px;
+    background: #ffffff;
+    border: 1px solid #a1a4b1;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .delivery-pay-form .group-01__bottom .btn__group {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .delivery-pay-form .group-01__bottom .btn__group input {
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 4px 18px;
+    background: rgba(229, 229, 229, 0.5);
+    outline: none;
+  }
+  .delivery-pay-form .group-02 {
+    background: #ffffff;
+    padding: 20px 15px;
+  }
+  .delivery-pay-form .group-03 {
+    padding: 20px 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .delivery-pay-form .group-03.is-active .group-03__top {
+    margin-bottom: 20px;
+  }
+  .delivery-pay-form .group-03__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .delivery-pay-form .group-03.is-active .group-03__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .delivery-pay-form .group-03 .group-03__bottom {
+    display: none;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+  }
+  .delivery-pay-form .group-03__bottom input {
+    padding: 10px 15px;
+    background: #ffffff;
+    border: 1px solid #a1a4b1;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .delivery-pay-form .group-03__bottom .label {
+    margin-bottom: 5px;
+  }
+  .delivery-pay-form .group-03__bottom .card__date__top {
+    width: 100%;
+  }
+  .delivery-pay-form .group-03__bottom .input__group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .delivery-pay-form .group-03__bottom .input__group .card__date {
+    width: 100%;
+  }
+  .delivery-pay-form .group-03__bottom .input__group .card__date:first-child {
+    margin-right: 10px;
+  }
+  .delivery-pay-form .group-03__bottom .input__group .card__date:last-child {
+    margin-left: 10px;
+    width: 104px;
+  }
+  .delivery-pay-form .group-03__bottom .cards__logo {
+    margin-bottom: 15px;
+  }
+  .delivery-pay-form .group-03__bottom .cards__logo img {
+    margin-right: 15px;
+  }
+  .delivery-pay-form .group-03__bottom .description__info {
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+  }
+  .delivery-pay-form .form__bottom {
+    padding-top: 30px;
+  }
+  .delivery-pay-form .form-check__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .delivery-pay-form .form__bottom .form-check input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    margin-top: 5px;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 18px;
+  }
+  .delivery-pay-form .form__bottom .form-check {
+    position: relative;
+    padding-left: 36px;
+    padding-right: 55px;
+    margin-bottom: 0;
+  }
+  .delivery-pay-form .form__bottom .form-check .form__check-input {
+    background: #f7f7f7;
+    border: 2px solid #f7f7f7;
+  }
+  .delivery-pay-form .form__bottom .form-check .form__check-label {
+    margin-bottom: 0px;
+    position: relative;
+    cursor: pointer;
+  }
+  .delivery-pay-form
+    .form__bottom
+    .form-check
+    .form__check-input
+    + label::before {
+    position: absolute;
+    left: -36px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 18px;
+    width: 18px;
+    content: "";
+    background: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    border: 2px solid #e31e24;
+    border-radius: 2px;
+  }
+  .delivery-pay-form .form__bottom .form-check .form__check-label::after {
+    display: none;
+    position: absolute;
+    content: url(../images/check.svg);
+    left: -34px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .delivery-pay-form
+    .form__bottom
+    .form-check
+    .form__check-input:checked
+    + label::after {
+    display: block;
+  }
+  .delivery-pay-form .form-check {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .delivery-pay-form .form-check .info {
+    color: #e31e24;
+  }
+  .delivery-pay-form .info__icon {
+    position: relative;
+  }
+  .delivery-pay-form .info__icon::before {
+    position: absolute;
+    content: url(../images/ant-design_info-circle-outline.svg);
+    left: -34px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  .delivery-pay-form .info__icon::after {
+    display: none;
+    position: absolute;
+    content: url(../images/Предупреждение.svg);
+    right: -7px;
+    top: -40px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .delivery-pay-form .info__icon:hover::after {
+    display: block;
+  }
+  .delivery-pay-form .form__box {
+    margin-top: 30px;
+  }
+  
+  /*** Delivery-pay-form Page end ***/
