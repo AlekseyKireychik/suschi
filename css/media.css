@@ -320,3 +320,8 @@
   }
   
 }
+@media screen and (max-width: 320px) {
+  .wok .nav-item a {
+    padding: 5px 10px;
+  }
+} 

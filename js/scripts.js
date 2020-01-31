@@ -51,3 +51,17 @@ function showOrders() {
   this.classList.add("is-active");
   this.innerHTML = "Оставить отзыв";
 }
+// window.addEventListener('scroll', function() {
+//   let header_top = document.querySelector(".header__top");
+//   let height_header = header_top.clientHeight;
+//   let scroll_height = document.documentElement.scrollHeight;
+//   console.log(height_header);
+//   console.log(scroll_height);
+//   header_top.classList.toggle("scrolled", height_header);
+// });
+// $(window).on("scroll", function() {
+//   $(".header__top").toggleClass(
+//     "scrolled",
+//     $(this).scrollTop() > $(".header__top").height()
+//   );
+// });

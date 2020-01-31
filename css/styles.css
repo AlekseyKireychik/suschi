@@ -53,6 +53,15 @@ header {
   align-items: center;
   padding: 20px;
 }
+/* .header__top.scrolled {
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  height: 80px;
+} */
 .header__nav {
   position: absolute;
   top: 80px;
