@@ -1,0 +1,848 @@
+.title {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+.btn {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #ffffff;
+  background: #e31e24;
+  border-radius: 10px;
+  width: 100%;
+  padding: 11px 5px;
+  cursor: pointer;
+  outline-color: transparent;
+}
+.btn:hover,
+.btn:active {
+  color: #ffffff;
+  text-decoration: none;
+  outline: none;
+}
+*:hover,
+*:active {
+  outline: transparent;
+}
+
+button {
+  cursor: pointer;
+  outline-color: transparent;
+}
+
+/*** Header Start ***/
+header {
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.header__top {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px;
+}
+.header__nav {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: calc(100vh - 80px);
+  height: 100%;
+  z-index: 9999;
+  -webkit-transition: -webkit-transform 0.5s
+    cubic-bezier(0.79, 0.14, 0.15, 0.86);
+  transition: -webkit-transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
+  -o-transition: transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
+  -webkit-transition: -webkit-transform 0.5s
+    cubic-bezier(0.79, 0.14, 0.15, 0.86);
+  transition: transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
+  transition: transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86),
+    -webkit-transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
+  transition: transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86),
+    -webkit-transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
+  -webkit-transform: translate3d(-99%, 0, 0);
+  transform: translate3d(-99%, 0, 0);
+  left: -1%;
+  background-color: #fff;
+}
+.header__nav.is-active {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 30px 0px 20px;
+  margin: 0 20px;
+  border-bottom: 2px solid #e31e24;
+}
+.header__item {
+  margin-bottom: 10px;
+}
+.header__item:last-child {
+  margin-bottom: 0px;
+}
+.header__link {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #000000;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.header__link:hover,
+.header__link:active,
+.header__link:focus {
+  color: #e31e24;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.header__radio {
+  position: relative;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #000000;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  padding-top: 25px;
+  padding-right: 46px;
+}
+.header__radio:hover,
+.header__radio:active,
+.header__radio:focus {
+  color: #e31e24;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.header__radio:before {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  background-color: #e31e24;
+  content: url("../images/fa-solid_lightbulb.svg");
+  right: 0px;
+  top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.header__phone {
+  position: relative;
+}
+.header__phone:before {
+  position: absolute;
+  content: url("../images/phone-icon.svg");
+  left: -60px;
+  top: 0px;
+}
+.burger__menu__button {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #e31e24;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  z-index: 991;
+}
+.burger__menu__lines {
+  position: absolute;
+  width: 13.75px;
+  height: 3.6px;
+  top: 47%;
+  right: 58%;
+  -webkit-transform: translate(50%);
+  -ms-transform: translate(50%);
+  transform: translate(50%);
+  background-color: #fff;
+}
+.burger__menu__lines::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 3.6px;
+  background-color: #fff;
+  top: -7.2px;
+}
+.burger__menu__lines::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 3.6px;
+  background-color: #fff;
+  top: 7.2px;
+}
+
+.burger__menu.is-active .burger__menu__lines {
+  background-color: transparent;
+}
+
+.burger__menu.is-active .burger__menu__lines::before {
+  width: 20px;
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.burger__menu.is-active .burger__menu__lines::after {
+  top: 0;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/*** Form promocode start ***/
+
+.form__promocode {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+}
+.input__promocode {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  background-color: #fff;
+  padding: 7px 133px 7px 23px;
+  color: #000000;
+  border: 1px solid #e31e24;
+  border-radius: 5px;
+  width: 100%;
+  outline-color: transparent;
+  text-transform: uppercase;
+}
+
+.input__promocode::-webkit-input-placeholder {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: initial;
+  color: rgba(29, 30, 28, 0.6);
+}
+.input__promocode::-moz-placeholder {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: initial;
+  color: rgba(29, 30, 28, 0.6);
+}
+.input__promocode:-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: initial;
+  color: rgba(29, 30, 28, 0.6);
+}
+.input__promocode::-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: initial;
+  color: rgba(29, 30, 28, 0.6);
+}
+.input__promocode::placeholder {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: initial;
+  color: rgba(29, 30, 28, 0.6);
+}
+
+.btn__promocode {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  background: #e31e24;
+  color: #ffffff;
+  border: 1px solid #e31e24;
+  border-radius: 5px;
+
+  padding: 7px 23px;
+}
+.input__promocode:placeholder-shown + .btn__promocode {
+  color: #e31e24;
+  background-color: #fff;
+}
+
+/*** Form promocode end ***/
+
+/*** Account step-1 Page start ***/
+.account.step-1 {
+  padding: 30px 20px 25px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+.account.step-1 .title {
+  margin-bottom: 20px;
+  max-width: 240px;
+}
+
+.account.step-1 .account__form {
+  width: 100%;
+}
+.account.step-1 .account__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+.account.step-1 .account__control {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  background: #ffffff;
+  padding: 5px 8px;
+  border: 1px solid #a1a4b1;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 15px;
+  outline-color: transparent;
+}
+.account.step-1 .account__control::-webkit-input-placeholder {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  color: #8b90a0;
+}
+.account.step-1 .account__control::-moz-placeholder {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  color: #8b90a0;
+}
+.account.step-1 .account__control:-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  color: #8b90a0;
+}
+.account.step-1 .account__control::-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  color: #8b90a0;
+}
+.account.step-1 .account__control::placeholder {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  color: #8b90a0;
+}
+.account.step-1 span {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0 auto 25px;
+  color: #000000;
+}
+
+/*** Account step-1 Page end ***/
+
+/*** Account step-2 Page start ***/
+.account.step-2 {
+  padding: 30px 20px 25px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+.account.step-2 .title {
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 auto 30px;
+  max-width: 240px;
+}
+.account.step-2 .title .maska {
+  display: inline;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.account.step-2 .account__form {
+  width: 100%;
+  text-align: center;
+}
+.account.step-2 .account__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+.account.step-2 .account__control {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  background: #ffffff;
+  padding: 5px 8px;
+  border: 1px solid #a1a4b1;
+  border-radius: 4px;
+  margin-bottom: 50px;
+  margin-right: 15px;
+  outline-color: transparent;
+  width: 30px;
+}
+.account.step-2 .account__control:last-child {
+  margin-right: 0;
+}
+.account.step-2 .btn {
+  color: #e31e24;
+  border: 1px solid #e31e24;
+  background-color: #fff;
+  max-width: 165px;
+}
+
+/*** Account step-2 Page end ***/
+
+/*** Account step-3-4 Page start ***/
+.account.step-3 {
+  padding: 30px 20px 25px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+.account.step-3 .account__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.account.step-3 .title {
+  margin-bottom: 0;
+}
+.account.step-3 .account__exit {
+  display: block;
+  position: relative;
+}
+.account.step-3 .account__exit::before {
+  position: absolute;
+  content: url(../images/Exit.svg);
+  top: -15px;
+  right: 0;
+}
+.account.step-3 .account__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+.account.step-3 .account__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 25px;
+}
+.account.step-3 .account__item:last-child {
+  margin-bottom: 30px;
+}
+.account.step-3 .account__titleDescription {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  max-width: 80px;
+}
+.account.step-3 .description {
+  width: 60%;
+}
+.account.step-3 .account__name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 2px;
+}
+.account.step-3 .account__phone {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 2px;
+}
+.account.step-3 .account__email {
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.account.step-3 .account__btn__change {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: #e31e24;
+  background-color: transparent;
+  outline-color: transparent;
+  border: none;
+  padding-left: 0;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.account.step-3 .account__btn__change:hover,
+.account.step-3 .account__btn__change:active {
+  text-decoration: underline;
+}
+.account.step-3 .account__btn__remove {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(0, 0, 0, 0.6);
+  background-color: transparent;
+  outline-color: transparent;
+  border: none;
+  padding-left: 0;
+  cursor: pointer;
+}
+.account.step-3 .account__btn__remove:hover,
+.account.step-3 .account__btn__remove:active {
+  text-decoration: underline;
+}
+.account.step-3 .account__btn__add {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: rgba(0, 0, 0, 0.6);
+  background-color: transparent;
+  outline-color: transparent;
+  border: none;
+  padding-left: 0;
+  cursor: pointer;
+}
+.account.step-3 .account__btn__add:hover,
+.account.step-3 .account__btn__add:active {
+  text-decoration: underline;
+}
+.account.step-3 .adress__item {
+  margin-bottom: 15px;
+}
+
+.account.step-3 .adress__item:last-child {
+  margin-bottom: 0px;
+}
+.account.step-3 .description__top .adress__item {
+  margin-bottom: 15px;
+}
+.account.step-3 .adress__item p {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.account.step-3 .description__title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 10px;
+}
+.account.step-3 .account__change__btn.btn {
+  width: 100%;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.6);
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+.account.step-3 .history__orders .title {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.account.step-3 .history__list {
+  width: 100%;
+  margin-bottom: 0;
+}
+.account.step-3 .history__item {
+  padding: 20px 15px;
+  margin-bottom: 18px;
+  background: rgba(229, 229, 229, 0.5);
+  border-radius: 10px;
+  width: 100%;
+}
+.account.step-3 .history__item:last-child {
+  margin-bottom: 0px;
+}
+.account.step-3 .history__delivery {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+.account.step-3 .history__delivery__date {
+  font-weight: 600;
+}
+.account.step-3 .position__delivery {
+  display: none;
+}
+.account.step-3 .position__delivery.is-active {
+  display: block;
+}
+.account.step-3 .position__container {
+  display: none;
+}
+.account.step-3 .position__container.is-active {
+  display: block;
+}
+.account.step-3 .position__name {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.account.step-3 .position__ingridients {
+  margin-bottom: 15px;
+}
+.account.step-3 .position__result.is-active {
+  border-top: 2px solid #898989;
+  border-bottom: 2px solid #898989;
+  padding: 15px 0;
+}
+.account.step-3 .position__result {
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-top: none;
+  border-bottom: none;
+  padding: 0;
+}
+.account.step-3 .position__adres__title {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.account.step-3 .position__adres__area {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.account.step-3 .position__time {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.account.step-3 .position__time__result {
+  font-weight: 500;
+}
+.account.step-3 button {
+  padding: 11px 35px;
+  background: #ffffff;
+  border: 1px solid #e31e24;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #e31e24;
+  outline-color: transparent;
+}
+.account.step-3 button.is-active {
+  width: 100%;
+}
+
+/*** Account step-3-4 Page end ***/
+
+/*** Account step-5 Page start ***/
+.account {
+  padding: 30px 20px 25px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+.account .title {
+  margin-bottom: 20px;
+}
+.account__form {
+  width: 100%;
+}
+.account__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+.account__control {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  background: #ffffff;
+  padding: 12px 8px;
+  border: 1px solid #a1a4b1;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  outline-color: transparent;
+}
+.account__control:last-child {
+  margin-bottom: 20px;
+}
+.account__label {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #232735;
+}
+
+/*** Account step-5 Page end ***/

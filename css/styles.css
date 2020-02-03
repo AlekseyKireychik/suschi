@@ -1,7 +1,5 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
-
-
 .title {
   font-family: "Montserrat";
   font-weight: 600;
@@ -53,7 +51,7 @@ header {
   align-items: center;
   padding: 20px;
 }
-/* .header__top.scrolled {
+/* .container__header.scrolled {
   position: fixed;
   background-color: #fff;
   top: 0;
@@ -86,9 +84,11 @@ header {
     cubic-bezier(0.79, 0.14, 0.15, 0.86);
   transition: -webkit-transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
   -o-transition: transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
-  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
+  -webkit-transition: -webkit-transform 0.5s
+    cubic-bezier(0.79, 0.14, 0.15, 0.86);
   transition: transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
-  transition: transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86), -webkit-transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
+  transition: transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86),
+    -webkit-transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
   transition: transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86),
     -webkit-transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
   -webkit-transform: translate3d(-99%, 0, 0);
@@ -352,15 +352,15 @@ header {
   font-weight: 600;
   font-size: 12px;
   line-height: 15px;
-  background: #E31E24;
-  color: #FFFFFF;
+  background: #e31e24;
+  color: #ffffff;
   border: 1px solid #e31e24;
   border-radius: 5px;
- 
+
   padding: 7px 23px;
 }
 .input__promocode:placeholder-shown + .btn__promocode {
-  color: #e31e24;  
+  color: #e31e24;
   background-color: #fff;
 }
 
@@ -2196,22 +2196,26 @@ p.pagenevs__description {
   line-height: 24px;
   color: #8b90a0;
 }
-.delivery.step-3 .delivery__control::-webkit-input-placeholder, .delivery.step-5 .delivery__control::-webkit-input-placeholder {
+.delivery.step-3 .delivery__control::-webkit-input-placeholder,
+.delivery.step-5 .delivery__control::-webkit-input-placeholder {
   font-size: 12px;
   line-height: 24px;
   color: #8b90a0;
 }
-.delivery.step-3 .delivery__control::-moz-placeholder, .delivery.step-5 .delivery__control::-moz-placeholder {
+.delivery.step-3 .delivery__control::-moz-placeholder,
+.delivery.step-5 .delivery__control::-moz-placeholder {
   font-size: 12px;
   line-height: 24px;
   color: #8b90a0;
 }
-.delivery.step-3 .delivery__control:-ms-input-placeholder, .delivery.step-5 .delivery__control:-ms-input-placeholder {
+.delivery.step-3 .delivery__control:-ms-input-placeholder,
+.delivery.step-5 .delivery__control:-ms-input-placeholder {
   font-size: 12px;
   line-height: 24px;
   color: #8b90a0;
 }
-.delivery.step-3 .delivery__control::-ms-input-placeholder, .delivery.step-5 .delivery__control::-ms-input-placeholder {
+.delivery.step-3 .delivery__control::-ms-input-placeholder,
+.delivery.step-5 .delivery__control::-ms-input-placeholder {
   font-size: 12px;
   line-height: 24px;
   color: #8b90a0;
@@ -3575,7 +3579,7 @@ p.pagenevs__description {
   margin-right: 0px;
 }
 .wok .osition__list {
-  margin-bottom: 30px;  
+  margin-bottom: 30px;
 }
 .wok .osition__item {
   overflow: hidden;
@@ -3592,11 +3596,11 @@ p.pagenevs__description {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   margin-bottom: -20px;
   padding-bottom: 35px;
   overflow-y: auto;
@@ -3609,7 +3613,7 @@ p.pagenevs__description {
 }
 .wok .products__item:hover img,
 .wok .products__item:active img {
-  border: 3px solid #E31E24;
+  border: 3px solid #e31e24;
 }
 .wok .products__item:first-child {
   margin-left: 20px;
@@ -3617,7 +3621,6 @@ p.pagenevs__description {
 .wok .products__item img {
   border-radius: 5px;
   border: 3px solid transparent;
-  
 }
 .wok .products__item p {
   max-width: 115px;
@@ -3625,36 +3628,34 @@ p.pagenevs__description {
   line-height: 12px;
   margin-bottom: 0px;
   margin-top: 5px;
-  
 }
 .wok .products__item span {
   font-weight: 700;
   font-size: 10px;
   line-height: 12px;
   margin-bottom: 0;
-  
 }
 .wok .cost__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 .wok .cost {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-bottom: 15px;
   padding-left: 20px;
   padding-right: 20px;
@@ -3670,16 +3671,16 @@ p.pagenevs__description {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
 }
-.wok .cost__value div{
+.wok .cost__value div {
   font-weight: 700;
   font-size: 10px;
   line-height: 12px;
@@ -3705,11 +3706,11 @@ p.pagenevs__description {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 .wok .wok__description {
   margin-left: 20px;
@@ -3720,7 +3721,7 @@ p.pagenevs__description {
   font-size: 14px;
   line-height: 17px;
 }
-.wok .wok__description p {  
+.wok .wok__description p {
   font-weight: 400;
   font-size: 8px;
   line-height: 10px;
@@ -3805,6 +3806,77 @@ p.pagenevs__description {
 .wok .busket__value.is-active {
   display: block;
 }
-
-
 /*** WOK Page end ***/
+
+/*** Contacts Page start ***/
+.contacts {
+  padding: 30px 0px 25px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.contacts .title {
+  margin-bottom: 30px;
+}
+.contacts .sub__title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 10px;
+}
+.contacts .adress {
+  margin-bottom: 0px;
+}
+.contacts .description {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.contacts .description p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 17px;
+}
+.contacts .description p:last-child {
+  margin-bottom: 0px;
+}
+.contacts .contacts__info {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.contacts .phone {
+  margin-bottom: 10px;
+}
+.contacts .phone a {
+  color: #000000;
+}
+.contacts .phone a:hover {
+  color: #e31e24;
+}
+.contacts .email {
+  color: #e31e24;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.contacts .email a {
+  color: #e31e24;
+}
+.contacts .copiryte {
+  font-weight: 500;
+}
+.contacts .btn__box {
+  width: 100%;
+}
+/*** Contacts Page end ***/

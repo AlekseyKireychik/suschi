@@ -1,3 +1,17 @@
+$(document).ready(function() {
+  //header sticky
+  if ($(document).scrollTop() > $(".fixed-top").height()) {
+    $(".fixed-top").toggleClass("scrolled");
+  }
+
+  $(window).on("scroll", function() {
+    $(".container__header").toggleClass(
+      "scrolled",
+      $(this).scrollTop() > $(".container__header").height() / 3
+    );
+  });
+});
+
 let productBtn = document.querySelectorAll(".catalog__btn");
 productBtn.forEach(item => {
   item.addEventListener("click", addOrder);
@@ -19,14 +33,11 @@ btnAdd.forEach(item => {
 });
 
 function addOrderTwo() {
-
   event.preventDefault();
   let infoOrder = document.querySelector(".info__order");
   infoOrder.classList.add("is-active");
   btnRemoveActive.classList.add("is-active");
-
 }
-
 
 let myNav = function() {
   let burgerBtn = document.querySelectorAll(".burger__menu__button");
@@ -51,17 +62,3 @@ function showOrders() {
   this.classList.add("is-active");
   this.innerHTML = "Оставить отзыв";
 }
-// window.addEventListener('scroll', function() {
-//   let header_top = document.querySelector(".header__top");
-//   let height_header = header_top.clientHeight;
-//   let scroll_height = document.documentElement.scrollHeight;
-//   console.log(height_header);
-//   console.log(scroll_height);
-//   header_top.classList.toggle("scrolled", height_header);
-// });
-// $(window).on("scroll", function() {
-//   $(".header__top").toggleClass(
-//     "scrolled",
-//     $(this).scrollTop() > $(".header__top").height()
-//   );
-// });
