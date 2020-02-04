@@ -193,7 +193,6 @@ header {
   position: absolute;
   content: url("../images/phone-icon.svg");
   left: -60px;
-  top: 0px;
 }
 .burger__menu__button {
   position: relative;

@@ -36,6 +36,10 @@ button {
   cursor: pointer;
   outline-color: transparent;
 }
+button:focus,
+button:active {
+  outline: transparent;
+}
 
 /*** Header Start ***/
 header {
@@ -195,7 +199,6 @@ header {
   position: absolute;
   content: url("../images/phone-icon.svg");
   left: -60px;
-  top: 0px;
 }
 .burger__menu__button {
   position: relative;
@@ -1783,6 +1786,11 @@ p.pagenevs__description {
   position: relative;
   border: none;
   background-color: transparent;
+  outline: transparent;;
+}
+.basket__cost:focus,
+.basket__cost:active {
+  outline: transparent;
 }
 .basket__cost::before {
   content: url(../images/ion-trash.svg);
@@ -1832,6 +1840,7 @@ p.pagenevs__description {
 }
 .basket .description__info {
   font-family: "Montserrat";
+  margin: 0 auto;
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
@@ -1883,6 +1892,11 @@ p.pagenevs__description {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+.basket .position__description img {
+  object-fit: cover;
+  max-width: 45px;
+  width: 100%;
 }
 .basket .position__title {
   font-weight: 600;
