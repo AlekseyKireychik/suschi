@@ -40,6 +40,9 @@ button:focus,
 button:active {
   outline: transparent;
 }
+body.is-active {
+  overflow: hidden;
+}
 #main {
   padding-top: 110px;
 }
@@ -101,11 +104,10 @@ header {
     -webkit-transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
   transition: transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86),
     -webkit-transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
-  -webkit-transform: translate3d(-99%, 0, 0);
+  -webkit-transform: translate3d(101%, 0, 0);
   transform: translate3d(101%, 0, 0);
   right: -100%;
   background-color: #fff;
-  display: none;
 }
 .header__nav.is-active {
   display: -webkit-box;

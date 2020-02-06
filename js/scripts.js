@@ -1,16 +1,16 @@
-$(document).ready(function() {
-  //header sticky
-  if ($(document).scrollTop() > $(".fixed-top").height()) {
-    $(".fixed-top").toggleClass("scrolled");
-  }
+// $(document).ready(function() {
+//   //header sticky
+//   if ($(document).scrollTop() > $(".fixed-top").height()) {
+//     $(".fixed-top").toggleClass("scrolled");
+//   }
 
-  $(window).on("scroll", function() {
-    $(".container__header").toggleClass(
-      "scrolled",
-      $(this).scrollTop() > $(".container__header").height() / 3
-    );
-  });
-});
+//   $(window).on("scroll", function() {
+//     $(".container__header").toggleClass(
+//       "scrolled",
+//       $(this).scrollTop() > $(".container__header").height() / 3
+//     );
+//   });
+// });
 
 let productBtn = document.querySelectorAll(".catalog__btn");
 productBtn.forEach(item => {
@@ -45,9 +45,12 @@ let myNav = function() {
     item.addEventListener("click", activeBtnToggle);
   });
   function activeBtnToggle() {
+    event.preventDefault();
     let burgerMenuBtn = document.querySelector(".burger__menu");
+    let bodyHidden = document.querySelector("body");
     let leftMenu = document.querySelector(".header__nav");
     burgerMenuBtn.classList.toggle("is-active");
+    bodyHidden.classList.toggle("is-active");
     leftMenu.classList.toggle("is-active");
   }
 };
