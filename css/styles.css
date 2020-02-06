@@ -40,11 +40,20 @@ button:focus,
 button:active {
   outline: transparent;
 }
-
+#main {
+  padding-top: 110px;
+}
+#main.home {
+  padding-top: 80px;
+}
 /*** Header Start ***/
 header {
   -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  z-index: 99;
 }
 .header__top {
   -webkit-box-pack: justify;
@@ -68,9 +77,6 @@ header {
   position: absolute;
   top: 80px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -96,12 +102,16 @@ header {
   transition: transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86),
     -webkit-transform 0.5s cubic-bezier(0.79, 0.14, 0.15, 0.86);
   -webkit-transform: translate3d(-99%, 0, 0);
-  transform: translate3d(-99%, 0, 0);
-  left: -1%;
+  transform: translate3d(101%, 0, 0);
+  right: -100%;
   background-color: #fff;
+  display: none;
 }
 .header__nav.is-active {
-  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 0;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
@@ -1786,7 +1796,7 @@ p.pagenevs__description {
   position: relative;
   border: none;
   background-color: transparent;
-  outline: transparent;;
+  outline: transparent;
 }
 .basket__cost:focus,
 .basket__cost:active {
