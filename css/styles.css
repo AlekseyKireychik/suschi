@@ -616,7 +616,7 @@ header {
   color: #ffffff;
   padding: 15px 20px;
   position: absolute;
-  top: 15px;
+  top: 95px;
   left: 20px;
   right: 20px;
 }
@@ -624,6 +624,8 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: fixed;
+  z-index: 99;
 }
 .info__order__title {
   margin-bottom: 5px;
